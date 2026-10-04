@@ -25,10 +25,14 @@ const DATA = path.join(PROJECT_ROOT, 'data');
 const REPORTS = path.join(PROJECT_ROOT, 'reports');
 
 function arg(name, def) {
-  const hit = process.argv.find(a => a === `--${name}` || a.startsWith(`--${name}=`));
-  if (!hit) return def;
+  const i = process.argv.findIndex(a => a === `--${name}` || a.startsWith(`--${name}=`));
+  if (i === -1) return def;
+  const hit = process.argv[i];
   const eq = hit.indexOf('=');
-  return eq === -1 ? true : hit.slice(eq + 1);
+  if (eq !== -1) return hit.slice(eq + 1);
+  const next = process.argv[i + 1];
+  if (next && !next.startsWith('--')) return next;   // 支持 `--from dir` 写法
+  return true;
 }
 
 function loadRules() {
@@ -128,10 +132,32 @@ function cmdScan() {
   const rules = loadRules();
   const { appDir } = resolveAppDir(PROJECT_ROOT, arg('app-dir', null) || null);
   const info = describe(appDir);
-  const targets = targetPaths(appDir, rules, arg('only', null));
+  const only = arg('only', null);
+  const targets = targetPaths(appDir, rules, only);
   const merged = new Map();
   const fileStats = {};
   const nonAsciiByFile = {};
+
+  // 门禁 1：已打过补丁的文件不能当扫描输入——那样只会抽到中文，覆盖掉好的英文快照
+  if (!arg('force', false)) {
+    const patched = [];
+    for (const t of targets) {
+      if (!fs.existsSync(t.abs)) continue;
+      const head = fs.readFileSync(t.abs, 'utf8');
+      if (head.includes('新建智能体') || head.includes('云端智能体')) patched.push(t.label);
+    }
+    if (patched.length) {
+      throw new Error(`这些文件已是中文（可能已打过补丁）：${patched.join(', ')}\n` +
+        '在已汉化的文件上扫描只会得到中文文案，并把现有的英文快照覆盖掉。\n' +
+        '请先还原英文：node src/cli.js restore --force（然后重新 scan → apply）\n' +
+        '确实想在当前文件上扫描：加 --force。');
+    }
+  }
+
+  // 门禁 2：--only 只生成部分快照，写到单独文件，不覆盖完整快照
+  const outFile = only && only !== true
+    ? path.join(DATA, 'candidates.partial.json')
+    : path.join(DATA, 'candidates.json');
 
   for (const t of targets) {
     if (!fs.existsSync(t.abs)) { log(`跳过（缺失）：${t.file}`); continue; }
@@ -181,6 +207,7 @@ function cmdScan() {
       }
     }
     entries[value] = {
+      value,
       safety, natural,
       ui: m.ui, risky: m.risky, other: m.other,
       props: m.props, riskyKinds: m.riskyKinds,
@@ -189,7 +216,7 @@ function cmdScan() {
     };
   }
 
-  writeJson(path.join(DATA, 'candidates.json'), {
+  writeJson(outFile, {
     generatedAt: new Date().toISOString(),
     appDir: info.appDir, version: info.version, commit: info.commit,
     fileStats, counts, entries, nonAscii: nonAsciiByFile,
@@ -200,7 +227,7 @@ function cmdScan() {
   log('按文件（可替换条数）：');
   for (const [label, c] of Object.entries(byFile)) log(`  ${label.padEnd(14)} auto ${String(c.auto).padStart(5)}  context ${String(c.context).padStart(5)}`);
   log('');
-  log(`已写入 data/candidates.json`);
+  log(`已写入 ${path.relative(PROJECT_ROOT, outFile)}` + (outFile.endsWith('partial.json') ? '（部分快照，仅供调试；apply 只认 data/candidates.json）' : ''));
   return 0;
 }
 
@@ -435,7 +462,8 @@ function escapeForLiteral(text) {
 function patchText(src, entries, label) {
   const edits = [];
   for (const [value, e] of entries) {
-    if (!e.__target || e.__target === e.value) continue;   // no-op 不动，避免把 \u2192 改写成 →
+    if (e.safety === 'skip') continue;                       // 与 plan / 审计口径保持一致
+    if (!e.__target || e.__target === e.__value) continue;    // 译文与原文相同：不动，避免把 \u2192 改写成 →
     const f = e.files[label];
     if (!f) continue;
     for (const [form, rec] of Object.entries(f.raw)) {
@@ -499,7 +527,7 @@ function cmdApply() {
   }
 
   // 先把每个条目的译文挂上，方便 patchText 使用
-  const entries = Object.entries(cand.entries).map(([value, e]) => [value, { ...e, __target: tr.byText[value] }]);
+  const entries = Object.entries(cand.entries).map(([value, e]) => [value, { ...e, __value: value, __target: tr.byText[value] }]);
 
   let totalReplacements = 0;
   const productPath = path.join(appDir, 'product.json');

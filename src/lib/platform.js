@@ -48,7 +48,10 @@ function postPatch(appDir, log) {
   notes.push(`清隔离属性：xattr -cr ${app} → ${x.ok ? 'ok' : '失败：' + x.out.slice(0, 160)}`);
   const c = run('codesign', ['--force', '--deep', '--sign', '-', app]);
   notes.push(`重新签名：codesign --force --deep --sign - ${app} → ${c.ok ? 'ok' : '失败：' + c.out.slice(0, 160)}`);
-  if (!c.ok) {
+  if (c.ok) {
+    const v = run('codesign', ['--verify', '--deep', '--strict', app]);
+    notes.push(`签名校验：codesign --verify --deep --strict → ${v.ok ? 'ok' : '未通过：' + v.out.slice(0, 160)}`);
+  } else {
     notes.push('签名失败会导致 Cursor 无法启动；请在有权限的终端里手动执行上面两条命令，或把 Cursor.app 装到 ~/Applications。');
   }
   return notes;

@@ -31,7 +31,10 @@ function writeBufAtomic(file, buf) {
   } catch (err) {
     try { fs.unlinkSync(tmp); } catch { /* ignore */ }
     if (err.code === 'EPERM' || err.code === 'EBUSY' || err.code === 'EACCES') {
-      const e = new Error(`写入被占用或拒绝：${file}\n请完全退出 Cursor 后重试（或改用 npm run apply 的 --from-quit 模式）。`);
+      const hint = process.platform === 'win32'
+        ? '请完全退出 Cursor 后重试（或改用 --force 热替换，重启后生效）。'
+        : '请完全退出 Cursor 后重试；若安装目录属主是 root（如 /Applications/Cursor.app），改用 sudo 运行。';
+      const e = new Error(`写入失败（${err.code}）：${file}\n${hint}`);
       e.cause = err;
       throw e;
     }

@@ -1,5 +1,5 @@
 node_modules/
 work/
-data/candidates.json
+data/candidates*.json
 reports/
 *.log

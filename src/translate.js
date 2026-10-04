@@ -17,10 +17,14 @@ const DATA = path.join(PROJECT_ROOT, 'data');
 const WORK = path.join(PROJECT_ROOT, 'work');
 
 function arg(name, def) {
-  const hit = process.argv.find(a => a === `--${name}` || a.startsWith(`--${name}=`));
-  if (!hit) return def;
+  const i = process.argv.findIndex(a => a === `--${name}` || a.startsWith(`--${name}=`));
+  if (i === -1) return def;
+  const hit = process.argv[i];
   const eq = hit.indexOf('=');
-  return eq === -1 ? true : hit.slice(eq + 1);
+  if (eq !== -1) return hit.slice(eq + 1);
+  const next = process.argv[i + 1];
+  if (next && !next.startsWith('--')) return next;   // 支持 `--from dir` 写法
+  return true;
 }
 const readJson = (f, d) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : d);
 const writeJson = (f, o) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(o, null, 1)); };
