@@ -81,13 +81,14 @@ function cmdDoctor() {
   const info = describe(appDir);
   F.ensureDir(WORK);
   const cfgPath = path.join(WORK, 'config.json');
-  writeJson(cfgPath, { appDir, savedAt: new Date().toISOString() });
+  const noSave = Boolean(arg('no-save', false));
+  if (!noSave) writeJson(cfgPath, { appDir, savedAt: new Date().toISOString() });
 
   log(`Cursor       ${info.version}  (commit ${String(info.commit).slice(0, 10)})`);
   log(`VS Code 内核 ${info.vscodeVersion}`);
   log(`安装目录     ${info.installDir}`);
   log(`应用目录     ${info.appDir}`);
-  log(`配置已写入   ${cfgPath}`);
+  log(`配置` + (noSave ? '（--no-save，未写盘）' : `已写入 ${cfgPath}`));
   log('');
   log('目标文件：');
   const out = [];
@@ -111,7 +112,7 @@ function cmdDoctor() {
   }
   log('');
   log(`Cursor 是否在运行：${P.isCursorRunning() ? '是（apply 前需要完全退出）' : '否'}`);
-  writeJson(path.join(REPORTS, 'doctor.json'), { ...info, targets: out, cursorRunning: P.isCursorRunning() });
+  if (!noSave) writeJson(path.join(REPORTS, 'doctor.json'), { ...info, targets: out, cursorRunning: P.isCursorRunning() });
 
   // 关键前提：校验值算法必须能被复现，否则不能改受保护文件
   const missing = out.filter(o => o.present && o.checksummed && !o.checksumMatches);
@@ -705,7 +706,7 @@ function cmdStatus() {
 
   log(`Cursor        ${info.version}  (commit ${String(info.commit).slice(0, 10)})`);
   log(`安装目录      ${info.installDir}`);
-  log(`补丁状态      ${patched ? `已打补丁（${patched} 个文件哈希与落盘记录一致）` : '未打补丁（英文）'}`);
+  log(`补丁状态      ${patched ? `已打补丁（${patched} 个文件` + patchedHow + `）` : '未打补丁（英文）'}`);
   log(`扫描快照      ${cand ? `${cand.version} / ${String(cand.commit).slice(0, 10)}${sameVersion ? '（与当前安装一致）' : '（与当前安装不一致，需要重新 scan）'}` : '无（需要 scan）'}`);
   log(`译文库        ${Object.keys(tr.byText).length} 条（按英文原文复用，升级后不浪费）`);
   if (pending !== null) log(`待翻译        ${pending} 条${pending ? '（运行 tools/run-translate.ps1 补翻，或直接 apply 保持英文）' : ''}`);

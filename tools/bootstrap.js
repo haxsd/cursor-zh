@@ -35,7 +35,8 @@ if (!fs.existsSync(CLI)) {
 }
 
 line('① 检测 Cursor 安装');
-if (!run(['doctor'])) {
+const doctorArgs = has('--check') ? ['doctor', '--no-save'] : ['doctor'];
+if (!run(doctorArgs)) {
   console.error('\n定位 Cursor 安装目录失败。可以显式指定：');
   console.error('  node src/cli.js doctor --app-dir="<Cursor>/resources/app"');
   process.exit(3);
