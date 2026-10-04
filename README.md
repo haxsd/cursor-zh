@@ -1,4 +1,4 @@
-# cursor-zh-hans
+# cursor-zh
 
 把 Cursor 桌面端**自有界面**（Agent 窗口 / Cursor 设置页 / 账号页 / Automations）翻成简体中文的本地工具。
 
@@ -36,8 +36,8 @@ Cursor 官方支持 `Configure Display Language` + 语言包，但语言包只�
 前提：那台机器装了 **Node.js ≥ 16**（`node -v` 能跑就行；Windows 可用 `winget install OpenJS.NodeJS.LTS`）。
 
 ```bash
-git clone <仓库地址> cursor-zh-hans
-cd cursor-zh-hans
+git clone https://github.com/haxsd/cursor-zh.git
+cd cursor-zh
 node tools/bootstrap.js --check    # 先看：装在哪、什么版本、补丁在不在
 node tools/bootstrap.js            # 一键：检测 → 扫描 → 打补丁 → 审计
 ```

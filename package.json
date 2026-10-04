@@ -1,5 +1,5 @@
 {
-  "name": "cursor-zh-hans",
+  "name": "cursor-zh",
   "version": "0.2.0",
   "private": false,
   "description": "把 Cursor 自有界面（Agent 窗口 / 设置页 / Automations）本地化为简体中文的本地补丁工具",
