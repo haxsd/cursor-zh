@@ -79,9 +79,9 @@ function cmdDoctor() {
   const rules = loadRules();
   const { appDir } = resolveAppDir(PROJECT_ROOT, arg('app-dir', null) || null);
   const info = describe(appDir);
-  F.ensureDir(WORK);
-  const cfgPath = path.join(WORK, 'config.json');
   const noSave = Boolean(arg('no-save', false));
+  if (!noSave) F.ensureDir(WORK);
+  const cfgPath = path.join(WORK, 'config.json');
   if (!noSave) writeJson(cfgPath, { appDir, savedAt: new Date().toISOString() });
 
   log(`Cursor       ${info.version}  (commit ${String(info.commit).slice(0, 10)})`);
