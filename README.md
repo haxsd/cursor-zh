@@ -31,6 +31,50 @@ Cursor 官方支持 `Configure Display Language` + 语言包，但语言包只�
 示例：`New Agent → 新建智能体`、`Cloud Agents → 云端智能体`、`Plan Mode → 计划模式`、
 `Fork Chat → 分叉对话`、`Cloud → 云端`、`Learn More → 了解更多`。
 
+## 在另一台电脑上装（Windows / macOS）
+
+前提：那台机器装了 **Node.js ≥ 16**（`node -v` 能跑就行；Windows 可用 `winget install OpenJS.NodeJS.LTS`）。
+
+```bash
+git clone <仓库地址> cursor-zh-hans
+cd cursor-zh-hans
+node tools/bootstrap.js --check    # 先看：装在哪、什么版本、补丁在不在
+node tools/bootstrap.js            # 一键：检测 → 扫描 → 打补丁 → 审计
+```
+
+- 译文库（4,437 条）随仓库一起来，所以**另一台机器不需要任何 API 密钥**；
+  只有当那边的 Cursor 版本更新、出现仓库里没有的新文案时才需要翻译（`--with-ai` 或跳过保持英文）。
+- 目标机器上必须有这台机器同版本或相近版本的 Cursor；版本不同也能用，`bootstrap` 会现场扫描该机器自己的文件。
+- 补丁打完重启 Cursor 生效；要回退：`node src/cli.js restore --force`。
+
+**Windows**：无额外步骤。装到 `D:\cursor\cursor`、`%LOCALAPPDATA%\Programs\cursor`、
+`C:\Program Files\Cursor` 都能自动找到。
+
+**macOS**：`apply` 会自动做两件必须做的事——`xattr -cr` 清隔离属性、`codesign --force --deep --sign -`
+重做 ad-hoc 签名。因为改动了 `Cursor.app` 里的文件，签名失效会导致系统拒绝启动（提示"已损坏"或
+`zsh: killed`），这一步不能省。如果 Cursor 装在 `/Applications` 且当前用户没有写权限，
+先把 Cursor 完全退出，再用 `sudo node tools/bootstrap.js`；或把 Cursor.app 放到 `~/Applications` 下。
+
+**Linux**：`/opt/Cursor`、`/usr/share/cursor`、`~/.local/share/cursor` 等常见路径都能找到，无额外步骤。
+
+## 一条命令上手
+
+```bash
+node tools/bootstrap.js --check     # 只看：装在哪、什么版本、补丁在不在、还差多少译文
+node tools/bootstrap.js             # 检测 → 扫描 → 打补丁 → 审计（用仓库里的 4,437 条译文）
+node tools/bootstrap.js --with-ai   # 顺带调用 DeepSeek 补翻新文案（需 DEEPSEEK_API_KEY）
+node tools/bootstrap.js --force     # 已打过补丁也重跑一遍
+```
+
+译文库 `data/translations.zh.json` 按**英文原文**索引，所以换机器、换 Cursor 小版本都能复用，
+只有新增文案需要重新翻译。`work/`（本机路径、备份、批次）与 `data/candidates.json`（按当前版本扫描
+出来的替换坐标）都是机器/版本相关的，不进版本库，由 `bootstrap` 现场生成。
+
+定位不到安装目录时用 `node src/cli.js doctor --app-dir="<Cursor>/resources/app"` 显式指定。
+
+`tools/run-translate.ps1` 是 Windows 专用（从 Codex 的 DPAPI 文件里解密密钥）；
+其他平台直接设 `DEEPSEEK_API_KEY` 环境变量后运行 `node src/translate.js`。
+
 ## 常用命令
 
 ```powershell
@@ -50,21 +94,40 @@ node src/cli.js restore   # 一键还原英文
 powershell -ExecutionPolicy Bypass -File tools\run-translate.ps1 --size=60 --concurrency=5
 ```
 
-## Cursor 升级后怎么办
+## Cursor 升级后：补丁会失效，但不会坏，重打很快
 
-升级会覆盖这三个文件（英文界面自动回来，不会坏）。要重新汉化：
+**会不会失效**：会。Cursor 升级会覆盖那三个文件，中文自动变回英文——不会崩溃、不会报"安装已损坏"，
+因为被覆盖的是整个文件（连同我们的改动），`product.json` 也由升级程序重写。
 
-```powershell
-node src/cli.js scan      # 对新版本重新抽取（必须，替换坐标按当前文件记录）
-powershell -ExecutionPolicy Bypass -File tools\run-translate.ps1   # 只翻新增文案，已有译文按原文复用
-node src/cli.js apply --force
+**已有的译文会不会白费**：不会。译文按英文原文索引，升级后能命中的部分直接复用。
+实测数据：一次重新扫描后，4,429 条里只有 3 条需要新翻译。
+
+**升级后重打**（约 1–2 分钟，其中扫描 5 秒、替换 10 秒，慢的部分只有翻译新增文案）：
+
+```bash
+node src/cli.js scan      # 必须：替换坐标按当前版本的文件重新记录
+node tools/bootstrap.js   # 或手动：run-translate → apply → audit
+node src/cli.js restore --force   # 任何可疑情况都能一键回到英文
 ```
 
-`apply` 有两条门禁：candidates.json 的 commit 必须与当前安装一致；每个文件大小必须与扫描时一致。
-不一致就拒绝落盘（防止把旧坐标套到新文件上）。所以**必须先 scan 再 apply**。
+**为什么会失效**：补丁记录的是"在某个字节区间把这段英文换成中文"。升级后 Cursor 会重新打包这些文件，
+字节位置全变，所以旧的替换坐标必须作废。工具对此有硬门禁：`apply` 会核对
+`candidates.json` 的 commit 与当前安装是否一致、每个文件大小是否与扫描时一致，不一致就拒绝落盘
+（宁可不动，也不会把旧坐标套到新文件上写坏）。
 
-也可以完全退出 Cursor 后双击 `work\apply.cmd`（重新打中文）或 `work\restore.cmd`（还原英文）。
-Cursor 正在运行时也能热替换，但需要重启 Cursor 才生效。
+**升级期间要注意**：Cursor 自动更新时如果正在运行，会先提示重启。建议装好中文后不去动它；
+真要升级，升级完按上面三步重打即可。
+
+## 分享给别人 / 免责
+
+- 这是**非官方**工具，与 Anysphere（Cursor）、Microsoft 无关；它修改的是本机 Cursor 安装目录里的
+  程序文件，属于社区同类做法（参见 polang233/cursor-language-pack、rongwei-lab/cursor-chinese）。
+- 风险与边界：只在 UI 字段上下文替换、落盘前语法校验、写入后审计、全程可回退；但 Cursor 大版本
+  更新后新增界面会先显示英文，极端情况下个别功能文案可能与实际行为不符。
+- 分享时**不要**把 `work/` 目录带上（里面有本机路径和安装目录备份）；`data/translations.zh.json`
+  才是值得共享的资产。
+- 协议：MIT。工作台基线译文思路参考了 microsoft/vscode-loc 与上述社区项目。
+
 
 ## 安全设计
 
@@ -102,13 +165,21 @@ Cursor 正在运行时也能热替换，但需要重启 Cursor 才生效。
 config/glossary.json   术语表（翻译时注入 prompt，verify 时做一致性检查）
 config/overrides.json  人工修正表（优先于 API 译文）
 config/rules.json      抽取与替换规则（UI 字段白名单、跳过规则、长度限制）
-src/cli.js             全部子命令
-src/translate.js       批量翻译（DeepSeek JSON 模式，可按原文续跑）
+src/cli.js             全部子命令（doctor/status/scan/batch/merge/verify/plan/apply/restore/audit）
+src/translate.js       批量翻译（DeepSeek JSON 模式，按原文续跑，不重复花钱）
 src/lib/literals.js    字面量扫描与安全分类（安全边界都在这里）
-src/lib/paths.js       定位 Cursor 安装目录、读取 product.json
+src/lib/paths.js       跨平台定位 Cursor 安装目录、读取 product.json
 src/lib/files.js       哈希、备份、原子写入
-tools/run-translate.ps1 DPAPI 解密并注入密钥后运行翻译
-data/translations.zh.json  译文（进版本库）
-work/                  批次、备份、运行配置（不进版本库）
+tools/bootstrap.js     一条命令上手（检测 → 扫描 → 补翻 → 打补丁 → 审计）
+tools/run-translate.ps1 Windows：DPAPI 解密密钥并注入环境后运行翻译
+data/translations.zh.json  译文（进版本库，跨机器复用）
+work/                  批次、备份、本机配置（不进版本库）
 reports/               抽取/校验/审计报告（不进版本库）
 ```
+
+## 多机器同步
+
+译文库进版本库后，多机器用法就是：`git pull` → `node tools/bootstrap.js`。
+每台机器的 `work/config.json`（Cursor 安装路径）、`work/backups/`、`data/candidates.json`
+各存各的，互不干扰。想让自己机器上的新译文被别人用到，提交 `data/translations.zh.json` 即可。
+

@@ -7,20 +7,34 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 
 const CANDIDATE_INSTALL_DIRS = [
+  // Windows
   'D:\\cursor\\cursor',
   path.join(process.env.LOCALAPPDATA || '', 'Programs', 'cursor'),
+  path.join(process.env.LOCALAPPDATA || '', 'cursor'),
   'C:\\Program Files\\Cursor',
   'C:\\Program Files\\cursor',
-  path.join(process.env.LOCALAPPDATA || '', 'cursor'),
+  // macOS
+  '/Applications/Cursor.app/Contents/Resources/app',
+  path.join(process.env.HOME || '', 'Applications', 'Cursor.app', 'Contents', 'Resources', 'app'),
+  // Linux
+  '/opt/Cursor/resources/app',
+  '/opt/cursor/resources/app',
+  '/usr/share/cursor/resources/app',
+  '/usr/lib/cursor/resources/app',
+  path.join(process.env.HOME || '', '.local', 'share', 'cursor', 'resources', 'app'),
 ];
+
+const IS_WIN = process.platform === 'win32';
+const IS_MAC = process.platform === 'darwin';
 
 function isAppDir(dir) {
   return Boolean(dir) && fs.existsSync(path.join(dir, 'product.json')) &&
     fs.existsSync(path.join(dir, 'out', 'vs', 'workbench'));
 }
 
-/** 从 `where cursor` / cursor.cmd 反推安装目录 */
+/** 从 `where cursor` / cursor.cmd 反推安装目录（仅 Windows） */
 function fromCommandOnPath() {
+  if (!IS_WIN) return null;
   try {
     const out = execFileSync('where.exe', ['cursor'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
     for (const line of out.split(/\r?\n/)) {
@@ -33,8 +47,19 @@ function fromCommandOnPath() {
   return null;
 }
 
-/** 从注册表卸载项反推安装目录 */
+/** macOS：从 /Applications 下的 Cursor.app 反推 */
+function fromMacApplications() {
+  if (!IS_MAC) return null;
+  for (const base of ['/Applications', path.join(process.env.HOME || '', 'Applications')]) {
+    const p = path.join(base, 'Cursor.app', 'Contents', 'Resources', 'app');
+    if (isAppDir(p)) return p;
+  }
+  return null;
+}
+
+/** 从注册表卸载项反推安装目录（仅 Windows） */
 function fromRegistry() {
+  if (!IS_WIN) return null;
   const keys = [
     'HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall',
     'HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall',
@@ -74,8 +99,9 @@ function resolveAppDir(projectRoot, explicit) {
   if (process.env.CURSOR_APP_DIR) candidates.push(process.env.CURSOR_APP_DIR);
   candidates.push(readSavedConfig(projectRoot));
   candidates.push(fromCommandOnPath());
+  candidates.push(fromMacApplications());
   candidates.push(fromRegistry());
-  candidates.push(...CANDIDATE_INSTALL_DIRS.map(d => path.join(d, 'resources', 'app')));
+  candidates.push(...CANDIDATE_INSTALL_DIRS);
 
   for (const c of candidates) {
     if (!c) continue;

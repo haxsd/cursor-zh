@@ -16,6 +16,7 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 const { resolveAppDir, describe } = require('./lib/paths');
 const F = require('./lib/files');
+const P = require('./lib/platform');
 const L = require('./lib/literals');
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
@@ -59,12 +60,6 @@ function targetPaths(appDir, rules, only) {
   return rules.targets
     .filter(t => !want || want.includes(t.label))
     .map(t => ({ ...t, abs: path.join(appDir, t.file) }));
-}
-function isCursorRunning() {
-  try {
-    const out = execFileSync('tasklist.exe', ['/FI', 'IMAGENAME eq Cursor.exe', '/NH'], { encoding: 'utf8' });
-    return /Cursor\.exe/i.test(out);
-  } catch { return false; }
 }
 /** product.json 里的 checksums 键相对 out/ 目录 */
 function checksumKey(relFile) {
@@ -115,8 +110,8 @@ function cmdDoctor() {
     out.find(o => o.label === t.label).syntaxCheck = v.ok;
   }
   log('');
-  log(`Cursor 是否在运行：${isCursorRunning() ? '是（apply 前需要完全退出）' : '否'}`);
-  writeJson(path.join(REPORTS, 'doctor.json'), { ...info, targets: out, cursorRunning: isCursorRunning() });
+  log(`Cursor 是否在运行：${P.isCursorRunning() ? '是（apply 前需要完全退出）' : '否'}`);
+  writeJson(path.join(REPORTS, 'doctor.json'), { ...info, targets: out, cursorRunning: P.isCursorRunning() });
 
   // 关键前提：校验值算法必须能被复现，否则不能改受保护文件
   const missing = out.filter(o => o.present && o.checksummed && !o.checksumMatches);
@@ -480,7 +475,7 @@ function cmdApply() {
   const info = describe(appDir);
   const { cand, plan } = buildPlan();
   const tr = loadTranslations();
-  const running = isCursorRunning();
+  const running = P.isCursorRunning();
   if (running && !arg('force', false)) {
     log('Cursor 正在运行。请完全退出 Cursor 后重试（或用 --force 尝试热替换，重启后生效）。');
     return 2;
@@ -552,6 +547,13 @@ function cmdApply() {
     manifest.product = pback;
     F.writeBufAtomic(productPath, Buffer.from(JSON.stringify(product, null, '\t'), 'utf8'));
     log('product.json 已更新并备份');
+  }
+
+  // macOS：改动 .app 内的文件会使代码签名失效，必须重新 ad-hoc 签名，否则系统拒绝启动
+  if (process.platform === 'darwin') {
+    log('');
+    log('平台收尾（macOS 签名）：');
+    for (const note of P.postPatch(appDir, log)) log('  ' + note);
   }
   writeJson(path.join(WORK, 'applied.json'), manifest);
   log('');
@@ -648,10 +650,105 @@ function cmdAudit() {
   return bad ? 1 : 0;
 }
 
+// ─────────────────────────────── status ───────────────────────────────
+/** 一眼看清：装在哪、什么版本、补丁在不在、还差多少译文、下一步做什么 */
+function cmdStatus() {
+  const rules = loadRules();
+  const { appDir } = resolveAppDir(PROJECT_ROOT, arg('app-dir', null) || null);
+  const info = describe(appDir);
+  const cand = readJson(path.join(DATA, 'candidates.json'), null);
+  const tr = loadTranslations();
+
+  // 补丁是否在：优先用落盘记录里的新哈希核对，没有记录时退回探针字符串
+  const applied = readJson(path.join(WORK, 'applied.json'), null);
+  let patched = 0;
+  let patchedHow = '';
+  if (applied && applied.commit === info.commit && Array.isArray(applied.files)) {
+    for (const rec of applied.files) {
+      if (!rec.newSha256 || !fs.existsSync(rec.file)) continue;
+      if (F.sha256Hex(F.readBuf(rec.file)) === rec.newSha256) patched++;
+    }
+    patchedHow = '（按落盘记录核对哈希）';
+  } else {
+    for (const t of rules.targets) {
+      const abs = path.join(appDir, t.file);
+      if (!fs.existsSync(abs)) continue;
+      if (fs.readFileSync(abs, 'utf8').includes('新建智能体')) patched++;
+    }
+    patchedHow = '（探针字符串判断）';
+  }
+  const sameVersion = Boolean(cand && cand.commit === info.commit);
+  const pending = cand
+    ? Object.entries(cand.entries).filter(([v, e]) => e.safety !== 'skip' && !tr.byText[v]).length
+    : null;
+
+  let next;
+  if (!cand || !sameVersion) next = 'node src/cli.js scan';
+  else if (!patched) next = 'node src/cli.js apply --force（Cursor 完全退出后运行更稳）';
+  else if (pending) next = 'tools/run-translate.ps1 补翻新文案，然后 apply';
+  else next = '无需操作；Cursor 升级后重新 scan → apply';
+
+  const result = {
+    version: info.version,
+    commit: info.commit,
+    appDir: info.appDir,
+    installDir: info.installDir,
+    patched,
+    sameVersion,
+    snapshotVersion: cand ? cand.version : null,
+    snapshotCommit: cand ? cand.commit : null,
+    translations: Object.keys(tr.byText).length,
+    pending,
+    next,
+  };
+  if (arg('json', false)) { log(JSON.stringify(result)); return 0; }
+
+  log(`Cursor        ${info.version}  (commit ${String(info.commit).slice(0, 10)})`);
+  log(`安装目录      ${info.installDir}`);
+  log(`补丁状态      ${patched ? `已打补丁（${patched} 个文件哈希与落盘记录一致）` : '未打补丁（英文）'}`);
+  log(`扫描快照      ${cand ? `${cand.version} / ${String(cand.commit).slice(0, 10)}${sameVersion ? '（与当前安装一致）' : '（与当前安装不一致，需要重新 scan）'}` : '无（需要 scan）'}`);
+  log(`译文库        ${Object.keys(tr.byText).length} 条（按英文原文复用，升级后不浪费）`);
+  if (pending !== null) log(`待翻译        ${pending} 条${pending ? '（运行 tools/run-translate.ps1 补翻，或直接 apply 保持英文）' : ''}`);
+  log(`下一步        ${next}`);
+  return 0;
+}
+
+/**
+ * 落盘清单丢了也能还原：直接扫描备份目录重建。
+ * 备份文件名是 "out__vs__workbench__xxx.js.gz" 这种把路径分隔符换成 __ 的形式。
+ */
+function reconstructManifest(appDir) {
+  const backupRoot = path.join(WORK, 'backups');
+  if (!fs.existsSync(backupRoot)) return null;
+  const dirs = fs.readdirSync(backupRoot).sort().reverse();
+  for (const dirName of dirs) {
+    const dir = path.join(backupRoot, dirName);
+    if (!fs.statSync(dir).isDirectory()) continue;
+    const gzFiles = fs.readdirSync(dir).filter(f => f.endsWith('.gz'));
+    if (!gzFiles.length) continue;
+    const manifest = { reconstructedAt: new Date().toISOString(), commit: dirName, appDir, files: [], product: null };
+    for (const f of gzFiles) {
+      const rel = f.replace(/\.gz$/, '').replace(/__/g, path.sep);
+      const rec = { file: path.join(appDir, rel), relName: rel, backupPath: path.join(dir, f) };
+      if (rel === 'product.json') manifest.product = rec;
+      else manifest.files.push(rec);
+    }
+    return manifest;
+  }
+  return null;
+}
+
 function cmdRestore() {
-  const manifest = readJson(path.join(WORK, 'applied.json'), null);
-  if (!manifest) throw new Error('没有 work/applied.json，无法还原');
-  if (isCursorRunning() && !arg('force', false)) {
+  let manifest = readJson(path.join(WORK, 'applied.json'), null);
+  if (!manifest) {
+    const { appDir } = resolveAppDir(PROJECT_ROOT, arg('app-dir', null) || null);
+    manifest = reconstructManifest(appDir);
+    if (manifest) {
+      log(`未找到 work/applied.json，已从备份目录重建清单（commit ${manifest.commit}，${manifest.files.length} 个文件 + product.json）`);
+    }
+  }
+  if (!manifest) throw new Error('没有 work/applied.json，也找不到 work/backups/ 下的备份，无法还原');
+  if (P.isCursorRunning() && !arg('force', false)) {
     log('Cursor 正在运行。请完全退出 Cursor 后重试（或 --force）。');
     return 2;
   }
@@ -663,18 +760,21 @@ function cmdRestore() {
     F.restoreFromBackup(manifest.product);
     log('已还原 product.json');
   }
-  fs.renameSync(path.join(WORK, 'applied.json'), path.join(WORK, 'applied.restored.json'));
+  const appliedPath = path.join(WORK, 'applied.json');
+  if (fs.existsSync(appliedPath)) {
+    fs.renameSync(appliedPath, path.join(WORK, 'applied.restored.json'));
+  }
   log('还原完成。重启 Cursor 生效。');
   return 0;
 }
 
 // ─────────────────────────────── main ───────────────────────────────
-const COMMANDS = { doctor: cmdDoctor, scan: cmdScan, batch: cmdBatch, merge: cmdMerge, verify: cmdVerify, plan: cmdPlan, apply: cmdApply, restore: cmdRestore, audit: cmdAudit };
+const COMMANDS = { doctor: cmdDoctor, status: cmdStatus, scan: cmdScan, batch: cmdBatch, merge: cmdMerge, verify: cmdVerify, plan: cmdPlan, apply: cmdApply, restore: cmdRestore, audit: cmdAudit };
 
 function main() {
   const cmd = process.argv[2];
   if (!cmd || !COMMANDS[cmd]) {
-    log('用法：node src/cli.js <doctor|scan|batch|merge|verify|plan|apply|restore>');
+    log('用法：node src/cli.js <doctor|status|scan|batch|merge|verify|plan|apply|restore|audit>');
     log('  --app-dir=<path>  指定 Cursor 的 resources/app');
     log('  --only=<labels>   scan 只处理某些目标（agent-window,editor-window,automations）');
     log('  --size=120        batch 每批条数');
