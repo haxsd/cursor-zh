@@ -1,0 +1,20 @@
+{
+  "name": "cursor-zh-hans",
+  "version": "0.1.0",
+  "private": true,
+  "description": "将 Cursor 自有界面（Agent 窗口 / 设置页 / Automations）本地化为简体中文的本地补丁工具",
+  "main": "src/cli.js",
+  "scripts": {
+    "doctor": "node src/cli.js doctor",
+    "scan": "node src/cli.js scan",
+    "batch": "node src/cli.js batch",
+    "merge": "node src/cli.js merge",
+    "verify": "node src/cli.js verify",
+    "plan": "node src/cli.js plan",
+    "apply": "node src/cli.js apply",
+    "restore": "node src/cli.js restore"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

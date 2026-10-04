@@ -1,0 +1,5 @@
+node_modules/
+work/
+data/candidates.json
+reports/
+*.log

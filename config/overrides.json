@@ -1,0 +1,21 @@
+{
+  "$comment": "人工修正表：优先于 API 译文。键是英文原文，值是最终中文。",
+  "text": {
+    "Plan": "计划",
+    "Plan Mode": "计划模式",
+    "Plan mode": "计划模式",
+    "Fork Chat": "分叉对话",
+    "Fork chat": "分叉对话",
+    "BETA": "测试版",
+    "Beta": "测试版",
+    "Self-Driving PRs": "自动 PR",
+    "Resume": "继续",
+    "Checkout Branch": "切换分支",
+    "Steer": "引导",
+    "Runs": "运行记录",
+    "Empty": "空",
+    "promptBar-tracking-range": "promptBar-tracking-range",
+    "char-insert diff-range-empty": "char-insert diff-range-empty",
+    "char-delete diff-range-empty": "char-delete diff-range-empty"
+  }
+}
