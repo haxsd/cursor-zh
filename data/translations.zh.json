@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-02T03:56:28.721Z",
+ "generatedAt": "2026-10-08T03:25:13.508Z",
  "byId": {
   "001-001": {
    "source": "Cancel",
@@ -3846,8 +3846,8 @@
    "target": "为新项目选择文件夹"
   },
   "017-002": {
-   "source": "Choose a model or use the cost- and availability-aware default",
-   "target": "选择模型，或使用兼顾成本与可用性的默认模型"
+   "source": "Choose a voice",
+   "target": "选择语音"
   },
   "017-003": {
    "source": "Choose between quick or more thorough, higher-cost analysis",
@@ -4510,12 +4510,12 @@
    "target": "默认浏览器"
   },
   "019-048": {
-   "source": "Default Model",
-   "target": "默认模型"
+   "source": "Default voice for voice chats",
+   "target": "语音对话的默认音色"
   },
   "019-049": {
-   "source": "Definitions",
-   "target": "定义"
+   "source": "Default voice for voice chats. Changing the voice plays a short sample.",
+   "target": "语音对话的默认音色。更改音色会播放一段简短示例。"
   },
   "019-050": {
    "source": "Degraded",
@@ -5318,12 +5318,12 @@
    "target": "https://api.openai.com/v1"
   },
   "024-010": {
-   "source": "https://example.com/mcp",
-   "target": "https://example.com/mcp"
+   "source": "How quickly the voice speaks in voice chats",
+   "target": "语音对话中语音的说话速度"
   },
   "024-011": {
-   "source": "https://tokens.bottlerocket.tesla.com/personal-tokens/",
-   "target": "https://tokens.bottlerocket.tesla.com/personal-tokens/"
+   "source": "How quickly the voice speaks in voice chats.",
+   "target": "语音对话中语音的说话速度。"
   },
   "024-012": {
    "source": "Human readable message that shows when locations is empty.",
@@ -6090,8 +6090,8 @@
    "target": "退出“每次询问”？"
   },
   "025-023": {
-   "source": "Left-hand side resource of the diff editor",
-   "target": "差异编辑器左侧的资源"
+   "source": "Language used in voice chats",
+   "target": "语音对话中使用的语言"
   },
   "025-024": {
    "source": "Legacy issue-reporter options (ignored).",
@@ -8050,8 +8050,8 @@
    "target": "设置团队市场"
   },
   "034-033": {
-   "source": "Set up AutoPay",
-   "target": "设置自动支付"
+   "source": "Sending the voice call's last rows",
+   "target": "正在发送语音通话的最后几行"
   },
   "034-034": {
    "source": "Set up or troubleshoot a Cursor Cloud Agent environment.",
@@ -9826,12 +9826,12 @@
    "target": "在智能体会话代码块中自动换行长行"
   },
   "039-057": {
-   "source": "Write something …",
-   "target": "写点什么…"
+   "source": "Words that send your prompt while you dictate",
+   "target": "口述时用于发送提示词的词"
   },
   "039-058": {
-   "source": "Write your instructions for the agent here...",
-   "target": "在此输入给智能体的指令..."
+   "source": "Words that send your prompt while you dictate. Voice chats ignore them.",
+   "target": "口述时用于发送提示词的词。语音对话会忽略它们。"
   },
   "039-059": {
    "source": "Yellow",
@@ -16790,8 +16790,8 @@
    "target": "显示选项"
   },
   "069-058": {
-   "source": "text search range for notebook search scope",
-   "target": "Notebook 搜索范围的文本搜索范围"
+   "source": "Private Inference Mode",
+   "target": "私有推理模式"
   },
   "069-059": {
    "source": "The cell index",
@@ -22153,10 +22153,20 @@
   "Workflow run completed...": "工作流运行已完成...",
   "📄": "📄",
   "🚨⚠️🚨⚠️🚨 HIGH MEMORY USAGE 🚨⚠️🚨⚠️🚨": "🚨⚠️🚨⚠️🚨 内存占用过高 🚨⚠️🚨⚠️🚨",
-  "The release crew includes 👩‍💻, 👨🏽‍🔧, and 🧑🏿‍🚀. Their status stays readable beside ✅, ⚠️, and 🚀.": "发布团队包含 👩‍💻、👨🏽‍🔧 和 🧑🏿‍🚀。在 ✅、⚠️ 和 🚀 旁边，他们的状态依然清晰可读。"
+  "The release crew includes 👩‍💻, 👨🏽‍🔧, and 🧑🏿‍🚀. Their status stays readable beside ✅, ⚠️, and 🚀.": "发布团队包含 👩‍💻、👨🏽‍🔧 和 🧑🏿‍🚀。在 ✅、⚠️ 和 🚀 旁边，他们的状态依然清晰可读。",
+  "Sending the voice call's last rows": "正在发送语音通话的最后几行",
+  "How quickly the voice speaks in voice chats": "语音对话中语音的说话速度",
+  "How quickly the voice speaks in voice chats.": "语音对话中语音的说话速度。",
+  "Default voice for voice chats": "语音对话的默认音色",
+  "Default voice for voice chats. Changing the voice plays a short sample.": "语音对话的默认音色。更改音色会播放一段简短示例。",
+  "Choose a voice": "选择语音",
+  "Language used in voice chats": "语音对话中使用的语言",
+  "Words that send your prompt while you dictate": "口述时用于发送提示词的词",
+  "Words that send your prompt while you dictate. Voice chats ignore them.": "口述时用于发送提示词的词。语音对话会忽略它们。",
+  "Private Inference Mode": "私有推理模式"
  },
  "usage": {
-  "total_tokens": 510284,
-  "calls": 78
+  "total_tokens": 522585,
+  "calls": 85
  }
 }

@@ -16,6 +16,12 @@
     "Empty": "空",
     "promptBar-tracking-range": "promptBar-tracking-range",
     "char-insert diff-range-empty": "char-insert diff-range-empty",
-    "char-delete diff-range-empty": "char-delete diff-range-empty"
+    "char-delete diff-range-empty": "char-delete diff-range-empty",
+    "Choose a voice": "选择音色",
+    "How quickly the voice speaks in voice chats": "语音对话的语速",
+    "How quickly the voice speaks in voice chats.": "语音对话的语速。",
+    "Words that send your prompt while you dictate": "听写时用于发送提示词的词",
+    "Words that send your prompt while you dictate. Spaces and punctuation are ignored.": "听写时用于发送提示词的词。空格和标点会被忽略。",
+    "Words that send your prompt while you dictate. Voice chats ignore them.": "听写时用于发送提示词的词。语音对话会忽略它们。"
   }
 }
