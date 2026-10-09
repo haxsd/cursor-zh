@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-08T03:25:13.508Z",
+ "generatedAt": "2026-10-09T03:05:01.787Z",
  "byId": {
   "001-001": {
    "source": "Cancel",
@@ -1918,12 +1918,12 @@
    "target": "追踪"
   },
   "008-060": {
-   "source": "Undo Apply",
-   "target": "撤销应用"
+   "source": "Worktree Cleanup",
+   "target": "工作树清理"
   },
   "011-001": {
-   "source": "Hide Email Address",
-   "target": "隐藏邮箱地址"
+   "source": "nesting is too deep to parse.",
+   "target": "嵌套层级过深，无法解析。"
   },
   "011-002": {
    "source": "High Contrast Dark Theme",
@@ -2258,8 +2258,8 @@
    "target": "--ui-portal-layer-z-index-tooltip"
   },
   "009-025": {
-   "source": "\\'",
-   "target": "\\'"
+   "source": "Annotate",
+   "target": "标注"
   },
   "009-026": {
    "source": "\\\"",
@@ -2638,8 +2638,8 @@
    "target": "Grok"
   },
   "010-060": {
-   "source": "Handle",
-   "target": "用户名"
+   "source": "must be a JSON object.",
+   "target": "必须是 JSON 对象。"
   },
   "014-001": {
    "source": "Add plan mode to composer modes",
@@ -2934,8 +2934,8 @@
    "target": "浏览器菜单"
   },
   "016-014": {
-   "source": "Browser URL not found",
-   "target": "未找到浏览器 URL"
+   "source": "Chat Width",
+   "target": "对话宽度"
   },
   "016-015": {
    "source": "Bubble Data Map",
@@ -3034,8 +3034,8 @@
    "target": "正在捕获进程快照..."
   },
   "016-039": {
-   "source": "Capturing snapshot. The window may briefly freeze.",
-   "target": "正在捕获快照。窗口可能会短暂卡顿。"
+   "source": "Choose Where to Download",
+   "target": "选择下载位置"
   },
   "016-040": {
    "source": "Castor",
@@ -3062,8 +3062,8 @@
    "target": "更改所有者"
   },
   "016-046": {
-   "source": "Change run mode",
-   "target": "更改运行模式"
+   "source": "Clear All",
+   "target": "全部清除"
   },
   "016-047": {
    "source": "Change the base URL for OpenAI API requests.",
@@ -4910,8 +4910,8 @@
    "target": "智能体无需批准即可读取的文件路径和 glob 模式。"
   },
   "022-028": {
-   "source": "File-Deletion Protection",
-   "target": "文件删除保护"
+   "source": "Flushing analytics events",
+   "target": "刷新分析事件"
   },
   "022-029": {
    "source": "Files & Folders",
@@ -5226,8 +5226,8 @@
    "target": "无法在云端继续。重试。"
   },
   "018-047": {
-   "source": "Count of failed controlled exec operations",
-   "target": "失败的受控执行操作数"
+   "source": "Cursor Dark Colorblind",
+   "target": "Cursor 深色色盲"
   },
   "018-048": {
    "source": "Count of successful controlled exec operations",
@@ -5254,16 +5254,16 @@
    "target": "崩溃报告"
   },
   "018-054": {
-   "source": "Create a cursor rule from the highlighted text",
-   "target": "从高亮文本创建 Cursor 规则"
+   "source": "Cursor Light Colorblind",
+   "target": "Cursor 浅色色盲"
   },
   "018-055": {
-   "source": "Create a document, diagram, or small website to express an idea.",
-   "target": "创建文档、图表或小型网站来表达想法。"
+   "source": "Cursor Light High Contrast",
+   "target": "Cursor 浅色高对比度"
   },
   "018-056": {
-   "source": "Create a merge commit",
-   "target": "创建合并提交"
+   "source": "Cursor periodically removes old worktrees to free disk space",
+   "target": "Cursor 会定期移除旧工作树以释放磁盘空间"
   },
   "018-057": {
    "source": "Create a new pull request",
@@ -5566,16 +5566,16 @@
    "target": "MAX 模式"
   },
   "026-012": {
-   "source": "MAX Only",
-   "target": "仅 MAX"
+   "source": "Microphone",
+   "target": "麦克风"
   },
   "026-013": {
    "source": "Maximize Chat",
    "target": "最大化对话"
   },
   "026-014": {
-   "source": "Maximum aggregate worktree size",
-   "target": "工作树总大小上限"
+   "source": "Microphone used in voice chats.",
+   "target": "用于语音对话的麦克风。"
   },
   "026-015": {
    "source": "Maximum power and flexibility",
@@ -6030,8 +6030,8 @@
    "target": "斜体"
   },
   "025-008": {
-   "source": "Jank",
-   "target": "卡顿"
+   "source": "Load React Developer Tools so Chrome DevTools shows the Components and Profiler tabs. It slows every React commit, so it's off by default. Restarts Cursor.",
+   "target": "加载 React Developer Tools，让 Chrome DevTools 显示 Components 和 Profiler Tab。它会拖慢每次 React 提交，因此默认关闭。将重启 Cursor。"
   },
   "025-009": {
    "source": "Jump to Next Diff on Accept",
@@ -7238,8 +7238,8 @@
    "target": "继续目标"
   },
   "033-010": {
-   "source": "Retake Screenshot",
-   "target": "重新截图"
+   "source": "Run on members' machines",
+   "target": "在成员机器上运行"
   },
   "033-011": {
    "source": "Reveal the given line at the given logical position",
@@ -7502,12 +7502,12 @@
    "target": "进程"
   },
   "031-016": {
-   "source": "Process snapshot upload failed. The snapshot is still saved on disk.",
-   "target": "进程快照上传失败。快照仍已保存在磁盘上。"
+   "source": "React DevTools",
+   "target": "React DevTools"
   },
   "031-017": {
-   "source": "Process snapshot uploaded successfully. Thank you!",
-   "target": "进程快照上传成功。谢谢！"
+   "source": "React Performance Tracks",
+   "target": "React 性能轨道"
   },
   "031-018": {
    "source": "Processing",
@@ -7922,8 +7922,8 @@
    "target": "CachedBlobStore 内存缓存中持有的常驻字节数，在刷新时采样"
   },
   "034-001": {
-   "source": "Search the marketplace",
-   "target": "搜索市场"
+   "source": "Sent by voice call",
+   "target": "通过语音通话发送"
   },
   "034-002": {
    "source": "Search web",
@@ -7950,8 +7950,8 @@
    "target": "选择本地市场文件夹"
   },
   "034-008": {
-   "source": "Select a local plugin repo",
-   "target": "选择本地插件仓库"
+   "source": "Set the maximum width of Agent conversations",
+   "target": "设置智能体对话的最大宽度"
   },
   "034-009": {
    "source": "Select channel",
@@ -8026,8 +8026,8 @@
    "target": "客户端暂存的序列化 RequestContext 字节"
   },
   "034-027": {
-   "source": "Serve Marketplace From Cursor",
-   "target": "从 Cursor 提供市场服务"
+   "source": "Show React's component render tracks in the Chrome DevTools Performance panel. They cost time on every commit even when nothing is recording, so turn them on only to profile. Reloads the window.",
+   "target": "在 Chrome DevTools Performance 面板中显示 React 组件渲染轨道。即使未录制，它们也会在每次提交时消耗时间，因此仅在性能分析时开启。会重新加载窗口。"
   },
   "034-028": {
    "source": "Server URL",
@@ -8058,8 +8058,8 @@
    "target": "设置或排查 Cursor 云端智能体环境。"
   },
   "034-035": {
-   "source": "Setup logs",
-   "target": "初始化日志"
+   "source": "Side chats",
+   "target": "侧边对话"
   },
   "034-036": {
    "source": "Setup to run inside a newly created worktree (generic fallback). Either an array of shell commands or a path to a script file relative to this JSON file.",
@@ -8266,8 +8266,8 @@
    "target": "排序方式"
   },
   "035-027": {
-   "source": "Sort by options",
-   "target": "排序选项"
+   "source": "Step limit not supported",
+   "target": "不支持步骤上限"
   },
   "035-028": {
    "source": "Source Action...",
@@ -8290,8 +8290,8 @@
    "target": "水平拆分磁贴"
   },
   "035-033": {
-   "source": "Split Tile Vertically",
-   "target": "垂直拆分磁贴"
+   "source": "Stopped with error",
+   "target": "因错误停止"
   },
   "035-034": {
    "source": "Squash & Merge",
@@ -8370,8 +8370,8 @@
    "target": "在不停止智能体的情况下引导它"
   },
   "035-053": {
-   "source": "Steering sends new messages to Agent while it works, without stopping it. Open Settings to turn it on.",
-   "target": "引导会在智能体工作时向其发送新消息，且不停止它。打开设置即可启用。"
+   "source": "System Default",
+   "target": "系统默认"
   },
   "035-054": {
    "source": "Still running locally?",
@@ -8582,8 +8582,8 @@
    "target": "使用开发环境"
   },
   "038-046": {
-   "source": "Use DMs",
-   "target": "使用私信"
+   "source": "View Report",
+   "target": "查看报告"
   },
   "038-047": {
    "source": "Use External Browser",
@@ -8682,8 +8682,8 @@
    "target": "建议的安装脚本"
   },
   "036-011": {
-   "source": "Suggestions",
-   "target": "建议"
+   "source": "Tech Lead",
+   "target": "技术负责人"
   },
   "036-012": {
    "source": "Suggestions While Commenting",
@@ -9246,8 +9246,8 @@
    "target": "0 * * * *"
   },
   "040-032": {
-   "source": "0 9 * * 1-5",
-   "target": "0 9 * * 1-5"
+   "source": "Add a Custom MCP",
+   "target": "添加自定义 MCP"
   },
   "040-033": {
    "source": "2 files, ran 2 commands",
@@ -9354,8 +9354,8 @@
    "target": "添加文件夹"
   },
   "040-059": {
-   "source": "Add link",
-   "target": "添加链接"
+   "source": "All commits in each PR will be added to the base branch via a merge commit.",
+   "target": "每个 PR 中的所有提交将通过合并提交添加到基础分支。"
   },
   "040-060": {
    "source": "Add new stuff",
@@ -9442,8 +9442,8 @@
    "target": "所有端点"
   },
   "041-021": {
-   "source": "All Icons Combined",
-   "target": "所有图标组合"
+   "source": "Another Window",
+   "target": "其他窗口"
   },
   "041-022": {
    "source": "All MCP servers from this plugin are already added.",
@@ -9518,8 +9518,8 @@
    "target": "Angular"
   },
   "041-040": {
-   "source": "Another move for this agent is awaiting confirmation",
-   "target": "此智能体的另一次移动正在等待确认"
+   "source": "Arrow",
+   "target": "箭头"
   },
   "041-041": {
    "source": "Anyone in team can access",
@@ -10090,8 +10090,8 @@
    "target": "取消进程"
   },
   "043-003": {
-   "source": "Candidate",
-   "target": "候选版"
+   "source": "Check Clock",
+   "target": "检查时钟"
   },
   "043-004": {
    "source": "Cannot Apply This Suggestion",
@@ -10642,8 +10642,8 @@
    "target": "复制活动文件路径"
   },
   "045-021": {
-   "source": "Copy PR Link",
-   "target": "复制 PR 链接"
+   "source": "Couldn't read this pull request's stack. Refresh to try again.",
+   "target": "无法读取此拉取请求的堆栈。刷新后重试。"
   },
   "045-022": {
    "source": "Copy pull request link",
@@ -10674,8 +10674,8 @@
    "target": "复制会话记录 ID"
   },
   "045-029": {
-   "source": "Copy URL",
-   "target": "复制 URL"
+   "source": "Create a Merge Commit",
+   "target": "创建合并提交"
   },
   "045-030": {
    "source": "Copy Web Link",
@@ -10826,8 +10826,8 @@
    "target": "正在创建链接…"
   },
   "046-007": {
-   "source": "Creating worktree...",
-   "target": "正在创建工作树..."
+   "source": "Custom Theme",
+   "target": "自定义主题"
   },
   "046-008": {
    "source": "Cron Expression",
@@ -10914,8 +10914,8 @@
    "target": "循环切换模式"
   },
   "046-029": {
-   "source": "Cycle Model Parameter",
-   "target": "循环切换模型参数"
+   "source": "Describe the change",
+   "target": "描述变更"
   },
   "046-030": {
    "source": "Dark · High contrast",
@@ -11166,12 +11166,12 @@
    "target": "已禁用的操作"
   },
   "047-032": {
-   "source": "Disabled for this workspace only. It is still running until you reload this window.",
-   "target": "仅在此工作区中禁用。在你重新加载此窗口前，它仍在运行。"
+   "source": "Drag to move · Double-click to remove",
+   "target": "拖动移动 · 双击移除"
   },
   "047-033": {
-   "source": "Disabled for this workspace only. Reload after re-enabling to load.",
-   "target": "仅在此工作区中禁用。重新启用后需重新加载才会生效。"
+   "source": "Draw",
+   "target": "绘制"
   },
   "047-034": {
    "source": "Disabled globally for this user. It is still running until you reload this window.",
@@ -11254,8 +11254,8 @@
    "target": "不再显示"
   },
   "047-054": {
-   "source": "Don’t Ask Again",
-   "target": "不再询问"
+   "source": "Ellipse",
+   "target": "椭圆"
   },
   "047-055": {
    "source": "Download Cursor Private Inference to use your organization’s private inference deployment.",
@@ -11594,8 +11594,8 @@
    "target": "元素选择"
   },
   "048-019": {
-   "source": "Emacs",
-   "target": "Emacs"
+   "source": "Exit Design Mode",
+   "target": "退出设计模式"
   },
   "048-020": {
    "source": "Email, comma separated",
@@ -11746,8 +11746,8 @@
    "target": "额外按钮"
   },
   "048-057": {
-   "source": "Failed",
-   "target": "失败"
+   "source": "Filter properties",
+   "target": "筛选属性"
   },
   "048-058": {
    "source": "Failed to Apply Suggestion",
@@ -12346,8 +12346,8 @@
    "target": "硬阻止"
   },
   "051-027": {
-   "source": "Hard Reload Browser Tab",
-   "target": "硬重新加载浏览器标签页"
+   "source": "Ignore Save As Shortcut in Projects",
+   "target": "在项目中忽略另存为快捷键"
   },
   "051-028": {
    "source": "hb model with thinking (brain icon)",
@@ -12902,8 +12902,8 @@
    "target": "生成远程 SSH 连接报告"
   },
   "050-046": {
-   "source": "Generated files are not rendered by default.",
-   "target": "默认不渲染生成的文件。"
+   "source": "Got It",
+   "target": "知道了"
   },
   "050-047": {
    "source": "Generating (with action)",
@@ -13074,8 +13074,8 @@
    "target": "合并被阻止：必需的状态检查仍在运行"
   },
   "055-029": {
-   "source": "Merge Method",
-   "target": "合并方式"
+   "source": "Narrow",
+   "target": "收窄"
   },
   "055-030": {
    "source": "Merge status is being calculated. Refresh if it does not resolve.",
@@ -13294,8 +13294,8 @@
    "target": "新建评估"
   },
   "056-024": {
-   "source": "New Side Chat",
-   "target": "新建侧边对话"
+   "source": "No matching properties",
+   "target": "没有匹配的属性"
   },
   "056-025": {
    "source": "New Tab Menu",
@@ -13346,8 +13346,8 @@
    "target": "否（esc）"
   },
   "056-037": {
-   "source": "No activity yet",
-   "target": "暂无活动"
+   "source": "No recent agents yet.",
+   "target": "暂无最近的智能体。"
   },
   "056-038": {
    "source": "No Agent For This Task",
@@ -13614,8 +13614,8 @@
    "target": "正常 - 已选中"
   },
   "057-044": {
-   "source": "Normal - Unselected",
-   "target": "正常 - 未选中"
+   "source": "Open in Grok Bot Harness",
+   "target": "在 Grok Bot Harness 中打开"
   },
   "057-045": {
    "source": "Not visible at this width",
@@ -13966,8 +13966,8 @@
    "target": "拉取请求详情"
   },
   "060-012": {
-   "source": "Pull request details unavailable",
-   "target": "拉取请求详情不可用"
+   "source": "Rectangle",
+   "target": "矩形"
   },
   "060-013": {
    "source": "Pull Requests...",
@@ -14206,8 +14206,8 @@
    "target": "重新打开上次关闭的 Tab"
   },
   "061-012": {
-   "source": "Reopen PR",
-   "target": "重新打开 PR"
+   "source": "Rulers",
+   "target": "标尺"
   },
   "061-013": {
    "source": "reopened this PR",
@@ -14470,8 +14470,8 @@
    "target": "会话不可用"
   },
   "063-018": {
-   "source": "Set bcId",
-   "target": "设置 bcId"
+   "source": "Simulate the unified SKU weekly usage-limit notice.",
+   "target": "模拟统一 SKU 每周用量上限通知。"
   },
   "063-019": {
    "source": "Set Log Level...",
@@ -14542,8 +14542,8 @@
    "target": "显示示例快速输入"
   },
   "063-036": {
-   "source": "Show Dummy Quick Pick",
-   "target": "显示示例快速选择"
+   "source": "Squash and Merge",
+   "target": "压缩并合并"
   },
   "063-037": {
    "source": "Show Dummy Quick Pick (With Long Description)",
@@ -14646,8 +14646,8 @@
    "target": "打开（缩放）"
   },
   "058-002": {
-   "source": "Open a Git repository",
-   "target": "打开 Git 仓库"
+   "source": "Open Tabs",
+   "target": "已打开的 Tab"
   },
   "058-003": {
    "source": "Open a workspace to search files in this window",
@@ -14838,12 +14838,12 @@
    "target": "选项 3"
   },
   "058-050": {
-   "source": "Optional focus for this FSD run, e.g. only fix CI or address a specific review thread.",
-   "target": "本次 FSD 运行的可选重点，例如只修复 CI 或处理某个具体的审查会话。"
+   "source": "Point at anything and tell the agent what to fix",
+   "target": "指向任意元素，告诉智能体要修复什么"
   },
   "058-051": {
-   "source": "Optional; defaults to OPEN when omitted. Set this when recording an output that is already resolved.",
-   "target": "可选；省略时默认为 OPEN。在记录已解决的输出时设置此项。"
+   "source": "Point at anything on the page and tell the agent what to fix.",
+   "target": "指向页面上的任意元素，告诉智能体要修复什么。"
   },
   "058-052": {
    "source": "Original Text Lines",
@@ -14906,8 +14906,8 @@
    "target": "保存时间："
   },
   "062-007": {
-   "source": "Saving your environment…",
-   "target": "正在保存环境…"
+   "source": "Search side chats",
+   "target": "搜索侧边对话"
   },
   "062-008": {
    "source": "Scan and Triage Security Vulnerabilities",
@@ -15086,8 +15086,8 @@
    "target": "次要脉动"
   },
   "062-052": {
-   "source": "Secondary w icon",
-   "target": "带图标的次要按钮"
+   "source": "Show annotations",
+   "target": "显示标注"
   },
   "062-053": {
    "source": "Secret value",
@@ -15414,8 +15414,8 @@
    "target": "正在等待日志条目…"
   },
   "068-014": {
-   "source": "Waiting for logs",
-   "target": "等待日志"
+   "source": "Worker Offline",
+   "target": "工作进程离线"
   },
   "068-015": {
    "source": "Waiting for reviewers · #151",
@@ -15450,8 +15450,8 @@
    "target": "网页链接"
   },
   "068-023": {
-   "source": "Webhook",
-   "target": "Webhook"
+   "source": "X-ray",
+   "target": "X-ray"
   },
   "068-024": {
    "source": "Webview Devtools",
@@ -15794,8 +15794,8 @@
    "target": "在对话中验证 Dockerfile"
   },
   "067-049": {
-   "source": "Version control system",
-   "target": "版本控制系统"
+   "source": "Weekly Limit",
+   "target": "每周上限"
   },
   "067-050": {
    "source": "View",
@@ -15818,8 +15818,8 @@
    "target": "查看文档"
   },
   "067-055": {
-   "source": "View on Web",
-   "target": "在网页中查看"
+   "source": "Wide",
+   "target": "宽"
   },
   "067-056": {
    "source": "View plan",
@@ -15854,8 +15854,8 @@
    "target": "SVG 预览"
   },
   "065-004": {
-   "source": "SVG source",
-   "target": "SVG 源码"
+   "source": "The entire stack will be squashed into a single commit in the base branch.",
+   "target": "整个堆叠将压缩为基础分支中的单个提交。"
   },
   "065-005": {
    "source": "SVG view",
@@ -16194,8 +16194,8 @@
    "target": "此拉取请求标签页还没有分支名称。"
   },
   "066-029": {
-   "source": "This server still checks a seeding gate; update it.",
-   "target": "此服务器仍会检查种子门控；请更新。"
+   "source": "Try Annotate",
+   "target": "试用 Annotate"
   },
   "066-030": {
    "source": "This session has expired.",
@@ -22163,10 +22163,72 @@
   "Language used in voice chats": "语音对话中使用的语言",
   "Words that send your prompt while you dictate": "口述时用于发送提示词的词",
   "Words that send your prompt while you dictate. Voice chats ignore them.": "口述时用于发送提示词的词。语音对话会忽略它们。",
-  "Private Inference Mode": "私有推理模式"
+  "Private Inference Mode": "私有推理模式",
+  "Annotate": "标注",
+  "nesting is too deep to parse.": "嵌套层级过深，无法解析。",
+  "must be a JSON object.": "必须是 JSON 对象。",
+  "Chat Width": "对话宽度",
+  "Choose Where to Download": "选择下载位置",
+  "Clear All": "全部清除",
+  "Worktree Cleanup": "工作树清理",
+  "Cursor Dark Colorblind": "Cursor 深色色盲",
+  "Cursor Light Colorblind": "Cursor 浅色色盲",
+  "Cursor Light High Contrast": "Cursor 浅色高对比度",
+  "Cursor periodically removes old worktrees to free disk space": "Cursor 会定期移除旧工作树以释放磁盘空间",
+  "Flushing analytics events": "刷新分析事件",
+  "Run on members' machines": "在成员机器上运行",
+  "Microphone": "麦克风",
+  "Microphone used in voice chats.": "用于语音对话的麦克风。",
+  "React DevTools": "React DevTools",
+  "React Performance Tracks": "React 性能轨道",
+  "Step limit not supported": "不支持步骤上限",
+  "Stopped with error": "因错误停止",
+  "System Default": "系统默认",
+  "Tech Lead": "技术负责人",
+  "Load React Developer Tools so Chrome DevTools shows the Components and Profiler tabs. It slows every React commit, so it's off by default. Restarts Cursor.": "加载 React Developer Tools，让 Chrome DevTools 显示 Components 和 Profiler Tab。它会拖慢每次 React 提交，因此默认关闭。将重启 Cursor。",
+  "Sent by voice call": "通过语音通话发送",
+  "Set the maximum width of Agent conversations": "设置智能体对话的最大宽度",
+  "Show React's component render tracks in the Chrome DevTools Performance panel. They cost time on every commit even when nothing is recording, so turn them on only to profile. Reloads the window.": "在 Chrome DevTools Performance 面板中显示 React 组件渲染轨道。即使未录制，它们也会在每次提交时消耗时间，因此仅在性能分析时开启。会重新加载窗口。",
+  "Side chats": "侧边对话",
+  "View Report": "查看报告",
+  "Another Window": "其他窗口",
+  "Arrow": "箭头",
+  "Add a Custom MCP": "添加自定义 MCP",
+  "All commits in each PR will be added to the base branch via a merge commit.": "每个 PR 中的所有提交将通过合并提交添加到基础分支。",
+  "Custom Theme": "自定义主题",
+  "Describe the change": "描述变更",
+  "Couldn't read this pull request's stack. Refresh to try again.": "无法读取此拉取请求的堆栈。刷新后重试。",
+  "Create a Merge Commit": "创建合并提交",
+  "Check Clock": "检查时钟",
+  "Drag to move · Double-click to remove": "拖动移动 · 双击移除",
+  "Draw": "绘制",
+  "Ellipse": "椭圆",
+  "Exit Design Mode": "退出设计模式",
+  "Filter properties": "筛选属性",
+  "Got It": "知道了",
+  "Ignore Save As Shortcut in Projects": "在项目中忽略另存为快捷键",
+  "Open in Grok Bot Harness": "在 Grok Bot Harness 中打开",
+  "No matching properties": "没有匹配的属性",
+  "No recent agents yet.": "暂无最近的智能体。",
+  "Narrow": "收窄",
+  "Rulers": "标尺",
+  "Rectangle": "矩形",
+  "Simulate the unified SKU weekly usage-limit notice.": "模拟统一 SKU 每周用量上限通知。",
+  "Squash and Merge": "压缩并合并",
+  "Search side chats": "搜索侧边对话",
+  "Show annotations": "显示标注",
+  "Open Tabs": "已打开的 Tab",
+  "Point at anything and tell the agent what to fix": "指向任意元素，告诉智能体要修复什么",
+  "Point at anything on the page and tell the agent what to fix.": "指向页面上的任意元素，告诉智能体要修复什么。",
+  "Try Annotate": "试用 Annotate",
+  "The entire stack will be squashed into a single commit in the base branch.": "整个堆叠将压缩为基础分支中的单个提交。",
+  "Worker Offline": "工作进程离线",
+  "X-ray": "X-ray",
+  "Weekly Limit": "每周上限",
+  "Wide": "宽"
  },
  "usage": {
-  "total_tokens": 522585,
-  "calls": 85
+  "total_tokens": 587763,
+  "calls": 121
  }
 }
