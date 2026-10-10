@@ -27,6 +27,7 @@
     "X-ray": "透视",
     "Draw": "画笔",
     "Narrow": "窄",
-    "Flushing analytics events": "正在发送分析事件"
+    "Flushing analytics events": "正在发送分析事件",
+    "Show pending annotations": "显示待处理的标注"
   }
 }

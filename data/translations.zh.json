@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-09T03:05:01.787Z",
+ "generatedAt": "2026-10-10T05:21:18.582Z",
  "byId": {
   "001-001": {
    "source": "Cancel",
@@ -9906,8 +9906,8 @@
    "target": "自动审查拉取请求（PR）中的缺陷和问题。"
   },
   "042-017": {
-   "source": "Automation name",
-   "target": "自动化名称"
+   "source": "Batch edits",
+   "target": "批量编辑"
   },
   "042-018": {
    "source": "Available at build",
@@ -11094,8 +11094,8 @@
    "target": "开发者：启动网络与 IPC 性能分析器"
   },
   "047-014": {
-   "source": "Developer: Start Tracking Disposables",
-   "target": "开发者：开始跟踪可释放对象"
+   "source": "Discard comment?",
+   "target": "丢弃评论？"
   },
   "047-015": {
    "source": "Developer: Startup Performance",
@@ -14126,8 +14126,8 @@
    "target": "释放私有 worker"
   },
   "060-052": {
-   "source": "Remember for this workspace",
-   "target": "在此工作区中记住"
+   "source": "Reset all CSS edits",
+   "target": "重置所有 CSS 编辑"
   },
   "060-053": {
    "source": "Remote Authority:",
@@ -14422,8 +14422,8 @@
    "target": "选择登录类型..."
   },
   "063-006": {
-   "source": "Select Team",
-   "target": "选择团队"
+   "source": "Show pending annotations",
+   "target": "显示待处理的注释"
   },
   "063-007": {
    "source": "Select the task to run...",
@@ -15038,8 +15038,8 @@
    "target": "搜索快捷键..."
   },
   "062-040": {
-   "source": "Search or enter URL...",
-   "target": "搜索或输入 URL..."
+   "source": "Send to agent",
+   "target": "发送给智能体"
   },
   "062-041": {
    "source": "Search organizations...",
@@ -15938,8 +15938,8 @@
    "target": "模板"
   },
   "065-025": {
-   "source": "Temporary",
-   "target": "临时"
+   "source": "This comment isn't saved yet",
+   "target": "此评论尚未保存"
   },
   "065-026": {
    "source": "Tertiary small w icon",
@@ -22225,10 +22225,16 @@
   "Worker Offline": "工作进程离线",
   "X-ray": "X-ray",
   "Weekly Limit": "每周上限",
-  "Wide": "宽"
+  "Wide": "宽",
+  "Reset all CSS edits": "重置所有 CSS 编辑",
+  "Discard comment?": "丢弃评论？",
+  "Batch edits": "批量编辑",
+  "Send to agent": "发送给智能体",
+  "Show pending annotations": "显示待处理的注释",
+  "This comment isn't saved yet": "此评论尚未保存"
  },
  "usage": {
-  "total_tokens": 587763,
-  "calls": 121
+  "total_tokens": 598063,
+  "calls": 127
  }
 }
