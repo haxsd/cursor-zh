@@ -58,6 +58,22 @@
     "promptText",
     "linkText"
   ],
+  "uiPropSuffixes": [
+    "Label",
+    "Title",
+    "Description",
+    "Hint",
+    "Placeholder",
+    "Caption",
+    "Message",
+    "Tooltip",
+    "Subtitle",
+    "Header",
+    "Detail",
+    "Heading",
+    "Summary"
+  ],
+  "$comment_uiPropSuffixes": "带前缀的属性名按后缀识别（autoUsageBarLabel、settingsButtonTitle、apiDescription…）。只收展示语义的后缀；Text 等混着功能值的后缀（sortText/searchText/newText）故意不收，避免翻译排序、过滤、差异内容。",
   "idProps": [
     "id",
     "key",

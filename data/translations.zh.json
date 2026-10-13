@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-10T05:21:18.582Z",
+ "generatedAt": "2026-10-13T11:44:22.057Z",
  "byId": {
   "001-001": {
    "source": "Cancel",
@@ -254,8 +254,8 @@
    "target": "未找到结果"
   },
   "003-004": {
-   "source": "Notifications",
-   "target": "通知"
+   "source": "Debugging CI",
+   "target": "正在调试 CI"
   },
   "003-005": {
    "source": "Open as Editor",
@@ -290,8 +290,8 @@
    "target": "技能"
   },
   "003-013": {
-   "source": "Switch",
-   "target": "切换"
+   "source": "Fixing CI with FSD",
+   "target": "正在使用 FSD 修复 CI"
   },
   "003-014": {
    "source": "Team Access",
@@ -306,8 +306,8 @@
    "target": "立即升级到 Pro"
   },
   "003-017": {
-   "source": "Use Multiple Models",
-   "target": "使用多个模型"
+   "source": "Invalid tool result",
+   "target": "工具结果无效"
   },
   "003-018": {
    "source": "User",
@@ -482,8 +482,8 @@
    "target": "拉取请求"
   },
   "002-001": {
-   "source": "Fork Chat",
-   "target": "派生对话"
+   "source": "Cursor Models",
+   "target": "Cursor 模型"
   },
   "002-002": {
    "source": "Input 1",
@@ -530,8 +530,8 @@
    "target": "显示全部模型…"
   },
   "002-013": {
-   "source": "Start Pro Now",
-   "target": "立即开始 Pro"
+   "source": "Other Models",
+   "target": "其他模型"
   },
   "002-014": {
    "source": "Submit",
@@ -694,8 +694,8 @@
    "target": "了解更多"
   },
   "002-054": {
-   "source": "Link actions",
-   "target": "链接操作"
+   "source": "Connect Repos",
+   "target": "连接仓库"
   },
   "002-055": {
    "source": "Log in",
@@ -910,8 +910,8 @@
    "target": "分支"
   },
   "004-048": {
-   "source": "Browse Files",
-   "target": "浏览文件"
+   "source": "Account",
+   "target": "账号"
   },
   "004-049": {
    "source": "Browse Marketplace",
@@ -1042,12 +1042,12 @@
    "target": "提供反馈"
   },
   "006-021": {
-   "source": "Go back",
-   "target": "返回"
+   "source": "Edit Goal",
+   "target": "编辑目标"
   },
   "006-022": {
-   "source": "Got it",
-   "target": "知道了"
+   "source": "Editing queued message",
+   "target": "正在编辑排队消息"
   },
   "006-023": {
    "source": "Grant repository access",
@@ -1102,8 +1102,8 @@
    "target": "已忽略的文件"
   },
   "006-036": {
-   "source": "Import Chat",
-   "target": "导入对话"
+   "source": "Failed to approve already-connected cloud MCP auth",
+   "target": "批准已连接的云端 MCP 授权失败"
   },
   "006-037": {
    "source": "Import Claude Code Conversations",
@@ -1114,16 +1114,16 @@
    "target": "从 VS Code 导入设置"
   },
   "006-039": {
-   "source": "Import settings, extensions, and keybindings from VS Code",
-   "target": "从 VS Code 导入设置、扩展和快捷键"
+   "source": "Failed to hydrate conversation step from conversation state.",
+   "target": "无法从会话状态恢复会话步骤。"
   },
   "006-040": {
    "source": "Include Third-Party Plugins, Skills, and Other Configs",
    "target": "包含第三方插件、技能和其他配置"
   },
   "006-041": {
-   "source": "Incorrect Branch",
-   "target": "分支不正确"
+   "source": "Failed to set up repository",
+   "target": "仓库初始化失败"
   },
   "006-042": {
    "source": "initial result",
@@ -1190,8 +1190,8 @@
    "target": "本地跟踪模式"
   },
   "006-058": {
-   "source": "Log In",
-   "target": "登录"
+   "source": "Grant Access",
+   "target": "授予访问权限"
   },
   "006-059": {
    "source": "Manage Billing",
@@ -1370,8 +1370,8 @@
    "target": "默认开启"
   },
   "005-043": {
-   "source": "Define what to do when having multiple results, either `peek`, `gotoAndPeek`, or `goto`",
-   "target": "定义出现多个结果时的行为：`peek`、`gotoAndPeek` 或 `goto`"
+   "source": "Committing...",
+   "target": "提交中..."
   },
   "005-044": {
    "source": "Detailed",
@@ -1398,8 +1398,8 @@
    "target": "下载视频"
   },
   "005-050": {
-   "source": "Dummy Option Beta",
-   "target": "示例选项 Beta"
+   "source": "Connect Repo",
+   "target": "连接仓库"
   },
   "005-051": {
    "source": "Dummy Option Gamma",
@@ -1718,8 +1718,8 @@
    "target": "重试云端智能体请求"
   },
   "008-010": {
-   "source": "Reveal in File Explorer",
-   "target": "在文件资源管理器中显示"
+   "source": "Open Grok Bot",
+   "target": "打开 Grok Bot"
   },
   "008-011": {
    "source": "Revert Files",
@@ -1918,8 +1918,8 @@
    "target": "追踪"
   },
   "008-060": {
-   "source": "Worktree Cleanup",
-   "target": "工作树清理"
+   "source": "Set up repository",
+   "target": "仓库设置完成"
   },
   "011-001": {
    "source": "nesting is too deep to parse.",
@@ -1990,8 +1990,8 @@
    "target": "正在加载图表..."
   },
   "011-018": {
-   "source": "Loading…",
-   "target": "加载中…"
+   "source": "Fix CI with FSD",
+   "target": "用 FSD 修复 CI"
   },
   "011-019": {
    "source": "Manage Themes",
@@ -2010,8 +2010,8 @@
    "target": "让当前主题跟随系统深色/浅色设置"
   },
   "011-023": {
-   "source": "Max Total Size (GB)",
-   "target": "最大总大小（GB）"
+   "source": "from plan tray",
+   "target": "从 Plan 托盘"
   },
   "011-024": {
    "source": "Max Worktrees",
@@ -2162,12 +2162,12 @@
    "target": "减少透明效果"
   },
   "009-001": {
-   "source": "Unpublish",
-   "target": "取消发布"
+   "source": "Set up repository with warnings",
+   "target": "仓库设置存在警告"
   },
   "009-002": {
-   "source": "Update Access",
-   "target": "更新访问权限"
+   "source": "Setting up repository",
+   "target": "正在设置仓库"
   },
   "009-003": {
    "source": "Updated",
@@ -2374,8 +2374,8 @@
    "target": "分支"
   },
   "009-054": {
-   "source": "Browse and install plugins from the Cursor marketplace. Type a search query after the command to find plugins.",
-   "target": "从 Cursor 应用市场浏览并安装插件。在命令后输入搜索关键词即可查找插件。"
+   "source": "Workspaces",
+   "target": "工作区"
   },
   "009-055": {
    "source": "Cancel (esc)",
@@ -2490,12 +2490,12 @@
    "target": "创建你自己的主题、调整风格，并导入你喜欢的主题"
   },
   "010-023": {
-   "source": "Current",
-   "target": "当前"
+   "source": "Autopilot PR",
+   "target": "自动 PR"
   },
   "010-024": {
-   "source": "Cursor-Managed Worktrees",
-   "target": "Cursor 托管的工作树"
+   "source": "Autopilot PR runtime",
+   "target": "自动 PR 运行环境"
   },
   "010-025": {
    "source": "Custom",
@@ -2630,8 +2630,8 @@
    "target": "图库"
   },
   "010-058": {
-   "source": "Give the Agent a Confetti Cannon",
-   "target": "给智能体加一门彩带炮"
+   "source": "Debug CI Failure",
+   "target": "调试 CI 失败"
   },
   "010-059": {
    "source": "Grok",
@@ -2762,8 +2762,8 @@
    "target": "允许智能体无需询问即可切换模式。关闭后，若 15 秒内无响应则跳过。"
   },
   "014-031": {
-   "source": "Allow All",
-   "target": "全部允许"
+   "source": "Add Plugins",
+   "target": "添加插件"
   },
   "014-032": {
    "source": "Allow Members to Publish",
@@ -2798,8 +2798,8 @@
    "target": "始终应用"
   },
   "014-040": {
-   "source": "Always ask",
-   "target": "始终询问"
+   "source": "Additional usage beyond limits consumes Other Models quota or on-demand spend.",
+   "target": "超出限制的额外用量会消耗其他模型配额或按需消费。"
   },
   "014-041": {
    "source": "Always Run",
@@ -2814,8 +2814,8 @@
    "target": "处理你的请求时出错。"
   },
   "014-044": {
-   "source": "an exception was thrown while processing ZodError within applyZodErrorsToEvent()",
-   "target": "在 applyZodErrorsToEvent() 中处理 ZodError 时抛出异常"
+   "source": "Agent model",
+   "target": "智能体模型"
   },
   "014-045": {
    "source": "Analytics Events",
@@ -2942,8 +2942,8 @@
    "target": "气泡数据映射"
   },
   "016-016": {
-   "source": "Build in Cloud",
-   "target": "在云端构建"
+   "source": "AWS Bedrock team configuration",
+   "target": "AWS Bedrock 团队配置"
   },
   "016-017": {
    "source": "Build Locally",
@@ -2970,8 +2970,8 @@
    "target": "按钮"
   },
   "016-023": {
-   "source": "Calculating",
-   "target": "计算中"
+   "source": "Background agent wakeup",
+   "target": "后台智能体唤醒"
   },
   "016-024": {
    "source": "Can't connect to server",
@@ -3026,12 +3026,12 @@
    "target": "截取区域屏幕截图"
   },
   "016-037": {
-   "source": "Capture Snapshot",
-   "target": "捕获快照"
+   "source": "branch name",
+   "target": "分支名称"
   },
   "016-038": {
-   "source": "Capturing process snapshot...",
-   "target": "正在捕获进程快照..."
+   "source": "Branch or commit hash",
+   "target": "分支或提交哈希"
   },
   "016-039": {
    "source": "Choose Where to Download",
@@ -3070,16 +3070,16 @@
    "target": "更改 OpenAI API 请求的基础 URL。"
   },
   "016-048": {
-   "source": "Change type",
-   "target": "更改类型"
+   "source": "Building image",
+   "target": "正在构建镜像"
   },
   "016-049": {
-   "source": "Changelog",
-   "target": "更新日志"
+   "source": "Built image",
+   "target": "镜像已构建"
   },
   "016-050": {
-   "source": "Changes requested",
-   "target": "请求更改"
+   "source": "Built image with warnings",
+   "target": "镜像已构建，但有警告"
   },
   "016-051": {
    "source": "Channel created",
@@ -3150,8 +3150,8 @@
    "target": "确定要执行此操作吗？"
   },
   "015-008": {
-   "source": "Are you sure you want to reset the chat mode to default?",
-   "target": "确定要将对话模式重置为默认吗？"
+   "source": "Always revert",
+   "target": "始终还原"
   },
   "015-009": {
    "source": "Argument",
@@ -3214,8 +3214,8 @@
    "target": "身份验证"
   },
   "015-024": {
-   "source": "Authenticate MCP",
-   "target": "验证 MCP"
+   "source": "Apply all agent changes, then review and resolve conflicts manually in the editor.",
+   "target": "应用所有智能体更改，然后在编辑器中手动审查并解决冲突。"
   },
   "015-025": {
    "source": "Authenticating…",
@@ -3330,8 +3330,8 @@
    "target": "AWS Secret Access Key"
   },
   "015-053": {
-   "source": "Azure OpenAI",
-   "target": "Azure OpenAI"
+   "source": "Authenticate this MCP server so its tools can be used. Call this tool through your MCP tool-calling interface when STATUS.md indicates this server needs authentication.",
+   "target": "对此 MCP 服务器进行身份验证，以便使用其工具。当 STATUS.md 显示此服务器需要身份验证时，通过 MCP 工具调用接口调用此工具。"
   },
   "015-054": {
    "source": "Azure OpenAI API key",
@@ -3482,12 +3482,12 @@
    "target": "后台任务已完成，但对话无法恢复。请稍后重试。"
   },
   "013-031": {
-   "source": "A coding agent in the open workspace.",
-   "target": "在已打开的工作区中运行的编程智能体。"
+   "source": "[ComposerAgentService] Blob not found in cloud agent storage",
+   "target": "[ComposerAgentService] 云端智能体存储中未找到 Blob"
   },
   "013-032": {
-   "source": "A narrow panel rewards concise sentences. Wider panels keep related clauses together, so the reader can scan without losing context. Both layouts should preserve the same words and punctuation.",
-   "target": "窄面板适合简洁的句子。较宽的面板能把相关从句放在一起，让读者扫读时不丢失上下文。两种布局都应保留相同的文字和标点。"
+   "source": "[ComposerAgentService] Blob not found in prefetchedBlobs",
+   "target": "[ComposerAgentService] prefetchedBlobs 中未找到 Blob"
   },
   "013-033": {
    "source": "A regular expression or string to test the command line against",
@@ -3538,20 +3538,20 @@
    "target": "访问密钥 ID"
   },
   "013-045": {
-   "source": "Account email shown on the profile page",
-   "target": "个人资料页显示的账号邮箱"
+   "source": "$(circle-slash)",
+   "target": "$(circle-slash)"
   },
   "013-046": {
    "source": "Add a marketplace from a repository",
    "target": "从仓库添加市场"
   },
   "013-047": {
-   "source": "Add a marketplace from your local computer",
-   "target": "从本地计算机添加市场"
+   "source": "$(lightbulb-sparkle)",
+   "target": "$(lightbulb-sparkle)"
   },
   "013-048": {
-   "source": "Add agents, context, tools",
-   "target": "添加智能体、上下文、工具"
+   "source": "$(lightbulb)",
+   "target": "$(lightbulb)"
   },
   "013-049": {
    "source": "Add an agent to get started",
@@ -3602,8 +3602,8 @@
    "target": "添加路径或 glob（例如 /tmp/*）"
   },
   "012-001": {
-   "source": "Refresh Changes",
-   "target": "刷新更改"
+   "source": "No Automations Yet",
+   "target": "暂无自动化"
   },
   "012-002": {
    "source": "Refreshing Statsig configurations...",
@@ -3758,8 +3758,8 @@
    "target": "已触发"
   },
   "012-040": {
-   "source": "Triggers",
-   "target": "触发器"
+   "source": "Run locally in a Worktree",
+   "target": "在 Worktree 中本地运行"
   },
   "012-041": {
    "source": "Try again",
@@ -3778,8 +3778,8 @@
    "target": "在对话中尝试"
   },
   "012-045": {
-   "source": "Unlink",
-   "target": "取消关联"
+   "source": "Search models",
+   "target": "搜索模型"
   },
   "012-046": {
    "source": "Ursa",
@@ -3802,8 +3802,8 @@
    "target": "工作树"
   },
   "012-051": {
-   "source": "Yesterday",
-   "target": "昨天"
+   "source": "Show less",
+   "target": "收起"
   },
   "012-052": {
    "source": " & Agent",
@@ -3942,8 +3942,8 @@
    "target": "关闭运行中的 Tab？"
   },
   "017-026": {
-   "source": "Close Window",
-   "target": "关闭窗口"
+   "source": "Check Again",
+   "target": "重新检查"
   },
   "017-027": {
    "source": "Closed",
@@ -4090,12 +4090,12 @@
    "target": "设计模式"
   },
   "020-003": {
-   "source": "Desktop bridge is disabled.",
-   "target": "桌面桥接已禁用。"
+   "source": "Created cloud workspace",
+   "target": "已创建云端工作区"
   },
   "020-004": {
-   "source": "Developed by Microsoft",
-   "target": "由 Microsoft 开发"
+   "source": "Created cloud workspace with warnings",
+   "target": "已创建云端工作区，但有警告"
   },
   "020-005": {
    "source": "Developer: open an additional Agents window while running --glass.",
@@ -4106,12 +4106,12 @@
    "target": "未打开资源"
   },
   "020-007": {
-   "source": "Diff too large to display",
-   "target": "差异过大，无法显示"
+   "source": "Creating cloud workspace",
+   "target": "正在创建云端工作区"
   },
   "020-008": {
-   "source": "Diff with Main Branch",
-   "target": "与主分支的差异"
+   "source": "Creating PR...",
+   "target": "正在创建 PR..."
   },
   "020-009": {
    "source": "Direction",
@@ -4218,8 +4218,8 @@
    "target": "ControlledKvManager setBlob 操作的耗时（毫秒）"
   },
   "020-035": {
-   "source": "Duration of EncryptedBlobStore getBlob operations in milliseconds",
-   "target": "EncryptedBlobStore getBlob 操作的耗时（毫秒）"
+   "source": "Cycle",
+   "target": "循环"
   },
   "020-036": {
    "source": "Duration of EncryptedBlobStore setBlob operations in milliseconds",
@@ -4326,8 +4326,8 @@
    "target": "创建对话"
   },
   "019-002": {
-   "source": "Create detailed plans for accomplishing tasks",
-   "target": "创建详细计划以完成任务"
+   "source": "Context window is getting full",
+   "target": "上下文窗口即将占满"
   },
   "019-003": {
    "source": "Create Draft PR",
@@ -4454,8 +4454,8 @@
    "target": "用于提交语音提示词的自定义词"
   },
   "019-034": {
-   "source": "Custom words that submit a voice prompt. Spaces and punctuation are ignored.",
-   "target": "用于提交语音提示词的自定义词。空格和标点会被忽略。"
+   "source": "Copy transcript link",
+   "target": "复制对话记录链接"
   },
   "019-035": {
    "source": "Customize the Cursor CLI status line.",
@@ -4554,8 +4554,8 @@
    "target": "部署名称"
   },
   "019-059": {
-   "source": "Deprecated Feature:",
-   "target": "已弃用功能："
+   "source": "Create Project Here",
+   "target": "在此创建项目"
   },
   "019-060": {
    "source": "Describe the bug...",
@@ -4578,64 +4578,64 @@
    "target": "Electron Trace 正在运行"
   },
   "021-005": {
-   "source": "Embedding Model",
-   "target": "嵌入模型"
+   "source": "Dev Auto Login (Enterprise)",
+   "target": "开发者自动登录（企业版）"
   },
   "021-006": {
-   "source": "Emergency heap profile triggered",
-   "target": "已触发紧急堆分析"
+   "source": "Dev Auto Login (Fake Tokens for Testing)",
+   "target": "开发者自动登录（用于测试的假 Token）"
   },
   "021-007": {
-   "source": "Empty message...",
-   "target": "空消息..."
+   "source": "Dev Auto Login (Free)",
+   "target": "开发者自动登录（免费）"
   },
   "021-008": {
-   "source": "Enable Action",
-   "target": "启用操作"
+   "source": "Dev Auto Login (Pro Plus Trial)",
+   "target": "开发者自动登录（Pro Plus 试用）"
   },
   "021-009": {
-   "source": "Enable auto import for Python. This is a beta feature.",
-   "target": "为 Python 启用自动导入。这是测试版功能。"
+   "source": "Dev Auto Login (Pro Plus)",
+   "target": "开发者自动登录（Pro Plus）"
   },
   "021-010": {
-   "source": "Enable Auto Refresh",
-   "target": "启用自动刷新"
+   "source": "Dev Auto Login (Pro Trial)",
+   "target": "开发者自动登录（Pro 试用）"
   },
   "021-011": {
-   "source": "Enable auto-keep to have changes be updated automatically. You can also do this later in Cursor Settings.",
-   "target": "启用自动保留以自动更新更改。之后也可在 Cursor 设置中开启。"
+   "source": "Dev Auto Login (Pro)",
+   "target": "开发者自动登录（Pro）"
   },
   "021-012": {
-   "source": "Enable browser tools",
-   "target": "启用浏览器工具"
+   "source": "Dev Auto Login (Ultra)",
+   "target": "开发者自动登录（Ultra）"
   },
   "021-013": {
-   "source": "Enable Cmd+P / Ctrl+P shortcut for file picker in Composer",
-   "target": "在 Composer 中启用 Cmd+P / Ctrl+P 快捷键打开文件选择器"
+   "source": "Dev Login (Enterprise)",
+   "target": "开发者登录（企业版）"
   },
   "021-014": {
-   "source": "Enable Data Handle Debugging",
-   "target": "启用数据句柄调试"
+   "source": "Dev Login (Free)",
+   "target": "开发者登录（免费）"
   },
   "021-015": {
-   "source": "Enable experimental multi diff editor.",
-   "target": "启用实验性多差异编辑器。"
+   "source": "Dev Login (Pro Plus Trial)",
+   "target": "开发者登录（Pro Plus 试用）"
   },
   "021-016": {
-   "source": "Enable leak detection console output",
-   "target": "启用泄漏检测控制台输出"
+   "source": "Dev Login (Pro Plus)",
+   "target": "开发者登录（Pro Plus）"
   },
   "021-017": {
-   "source": "Enable logging of extension host RPC messages to JSON files viewable in Perfetto. Requires restart.",
-   "target": "将扩展主机 RPC 消息记录到可在 Perfetto 中查看的 JSON 文件。需要重启。"
+   "source": "Dev Login (Pro Trial)",
+   "target": "开发者登录（Pro 试用）"
   },
   "021-018": {
-   "source": "Enable on-demand usage to go beyond your plan's included usage. Requires a paid plan.",
-   "target": "启用按需用量，以超出方案包含的用量。需要付费方案。"
+   "source": "Dev Login (Pro)",
+   "target": "开发者登录（Pro）"
   },
   "021-019": {
-   "source": "Enable or disable Self-driving for PRs owned by this account",
-   "target": "为此账号拥有的 PR 启用或禁用 Self-driving"
+   "source": "Dev Login (Ultra)",
+   "target": "开发者登录（Ultra）"
   },
   "021-020": {
    "source": "Enable Run Everything",
@@ -4690,16 +4690,16 @@
    "target": "环境模式"
   },
   "021-033": {
-   "source": "Environment variables to set for the server process",
-   "target": "为服务器进程设置的环境变量"
+   "source": "Dismiss payment failed banner",
+   "target": "关闭支付失败横幅"
   },
   "021-034": {
-   "source": "Error Output",
-   "target": "错误输出"
+   "source": "Dismiss payment method update banner",
+   "target": "关闭支付方式更新横幅"
   },
   "021-035": {
-   "source": "Error processing current file context.",
-   "target": "处理当前文件上下文时出错。"
+   "source": "Dismiss pending cancellation banner",
+   "target": "关闭待处理取消横幅"
   },
   "021-036": {
    "source": "Error processing file context.",
@@ -4726,8 +4726,8 @@
    "target": "错误：cursor-backend-control 自动化工具未启用"
   },
   "021-042": {
-   "source": "Error: get_cursor_user_state is not enabled",
-   "target": "错误：get_cursor_user_state 未启用"
+   "source": "Don't show again for this agent.",
+   "target": "对此智能体不再显示。"
   },
   "021-043": {
    "source": "Error: open_automation can only run in Glass",
@@ -4890,12 +4890,12 @@
    "target": "False"
   },
   "022-023": {
-   "source": "Fetch Domain Allowlist",
-   "target": "获取域名允许列表"
+   "source": "Editing",
+   "target": "编辑中"
   },
   "022-024": {
-   "source": "Fetch marketplace plugins from the GitHub repository",
-   "target": "从 GitHub 仓库获取市场插件"
+   "source": "Editing goal",
+   "target": "编辑目标"
   },
   "022-025": {
    "source": "Fetch webpage",
@@ -5018,8 +5018,8 @@
    "target": "焦点选项"
   },
   "022-055": {
-   "source": "Focus Outline",
-   "target": "焦点轮廓"
+   "source": "Enterprise Login",
+   "target": "企业版登录"
   },
   "022-056": {
    "source": "Fold the content in the editor",
@@ -5038,8 +5038,8 @@
    "target": "代码编辑器和差异的字体大小"
   },
   "022-060": {
-   "source": "Font size for the Cursor user interface",
-   "target": "Cursor 用户界面的字体大小"
+   "source": "Environment replacement is not supported in the IDE client",
+   "target": "IDE 客户端不支持环境变量替换"
   },
   "018-001": {
    "source": "Confirm Marketplace Deletion",
@@ -5106,12 +5106,12 @@
    "target": "控制命令在沙盒中运行时允许哪些网络请求。在工作区的 sandbox.json 中编辑允许/拒绝的域名。"
   },
   "018-017": {
-   "source": "Controls how shell and edit-file tool calls are displayed and grouped in Editor Agent conversations.",
-   "target": "控制 Editor 智能体对话中 shell 和编辑文件工具调用的显示与分组方式。"
+   "source": "CloudAgentRepository: Failed to skip cloud questionnaire",
+   "target": "CloudAgentRepository: 跳过云端问卷失败"
   },
   "018-018": {
-   "source": "Controls how shell and edit-file tool calls are displayed and grouped in Glass Agent conversations.",
-   "target": "控制 Glass 智能体对话中 shell 和编辑文件工具调用的显示与分组方式。"
+   "source": "CloudAgentRepository: Failed to submit cloud questionnaire response",
+   "target": "CloudAgentRepository: 提交云端问卷回复失败"
   },
   "018-019": {
    "source": "Controls if and when the hover should take focus upon being triggered by this action.",
@@ -5138,12 +5138,12 @@
    "target": "会话切换滚动门控已激活"
   },
   "018-025": {
-   "source": "Convert",
-   "target": "转换"
+   "source": "Codebase options",
+   "target": "代码库选项"
   },
   "018-026": {
-   "source": "Convert draft PR to open PR",
-   "target": "将草稿拉取请求转为打开的拉取请求"
+   "source": "Codex",
+   "target": "Codex"
   },
   "018-027": {
    "source": "Coordinate long-horizon tasks with delegated subagents",
@@ -5182,16 +5182,16 @@
    "target": "复制命令"
   },
   "018-036": {
-   "source": "Copy Error",
-   "target": "复制错误"
+   "source": "Completed setup",
+   "target": "初始化完成"
   },
   "018-037": {
-   "source": "Copy JSON",
-   "target": "复制 JSON"
+   "source": "Completed setup with warnings",
+   "target": "初始化完成，但有警告"
   },
   "018-038": {
-   "source": "Copy prompt",
-   "target": "复制提示词"
+   "source": "Completing setup",
+   "target": "正在初始化"
   },
   "018-039": {
    "source": "Copy Remote URL",
@@ -5270,12 +5270,12 @@
    "target": "创建新的拉取请求"
   },
   "018-058": {
-   "source": "Create an agent to start working on tasks",
-   "target": "创建智能体以开始处理任务"
+   "source": "Consumed by named models.",
+   "target": "由指定模型使用。"
   },
   "018-059": {
-   "source": "Create and initialize git repo",
-   "target": "创建并初始化 Git 仓库"
+   "source": "Context Explorer",
+   "target": "上下文资源管理器"
   },
   "018-060": {
    "source": "Create Branch",
@@ -5290,8 +5290,8 @@
    "target": "高亮行"
   },
   "024-003": {
-   "source": "Hook additional_context carriers drained into the caller collector",
-   "target": "Hook additional_context 载体已排空到调用方收集器"
+   "source": "Failed to start agent services",
+   "target": "启动智能体服务失败"
   },
   "024-004": {
    "source": "HTTP headers",
@@ -5306,8 +5306,8 @@
    "target": "HTTP/1.1"
   },
   "024-007": {
-   "source": "HTTP/2",
-   "target": "HTTP/2"
+   "source": "Failed waiting for a worker",
+   "target": "等待工作进程失败"
   },
   "024-008": {
    "source": "HTTP/2 is recommended for low-latency streaming. In some corporate proxy and VPN environments, the compatibility mode may need to be lowered.",
@@ -5494,28 +5494,28 @@
    "target": "安装 MCP 服务器将以你的用户权限执行命令。只有在完全信任服务器来源并了解其影响的情况下才继续。"
   },
   "024-054": {
-   "source": "Integrate your app with the Cursor SDK.",
-   "target": "将你的应用与 Cursor SDK 集成。"
+   "source": "Free Login",
+   "target": "免费登录"
   },
   "024-055": {
    "source": "Interactive",
    "target": "交互式"
   },
   "024-056": {
-   "source": "INTERNAL",
-   "target": "内部"
+   "source": "from error tray",
+   "target": "从错误托盘"
   },
   "024-057": {
-   "source": "Interrupt",
-   "target": "中断"
+   "source": "from plan tab",
+   "target": "从 Plan 标签页"
   },
   "024-058": {
-   "source": "Invalid desktop bridge action arguments.",
-   "target": "桌面桥接操作参数无效。"
+   "source": "from switch mode card",
+   "target": "从切换模式卡片"
   },
   "024-059": {
-   "source": "Invalid UriComponents",
-   "target": "UriComponents 无效"
+   "source": "Full",
+   "target": "已满"
   },
   "024-060": {
    "source": "Invalid view filter was ignored",
@@ -5590,8 +5590,8 @@
    "target": "稍后再说"
   },
   "026-018": {
-   "source": "MCP Allowlist",
-   "target": "MCP 允许列表"
+   "source": "Includes Cursor Grok and Composer",
+   "target": "包含 Cursor Grok 和 Composer"
   },
   "026-019": {
    "source": "MCP App",
@@ -5674,32 +5674,32 @@
    "target": "将所有 max 模型迁移到新的 max 模式"
   },
   "026-039": {
-   "source": "Migrate auto-approved mode transitions allowlist to a global toggle",
-   "target": "将自动批准的模式切换允许列表迁移为全局开关"
+   "source": "Installed dependencies",
+   "target": "已安装依赖项"
   },
   "026-040": {
-   "source": "Migrate codeBlockDisplayPreference from expanded to collapsed (compact mode as default)",
-   "target": "将 codeBlockDisplayPreference 从 expanded 迁移为 collapsed（默认使用紧凑模式）"
+   "source": "Installed dependencies with warnings",
+   "target": "依赖项已安装，但有警告"
   },
   "026-041": {
-   "source": "Migrate legacy isWebSearchToolEnabled and isWebSearchToolEnabled2 to isWebSearchToolEnabled3",
-   "target": "将旧版 isWebSearchToolEnabled 和 isWebSearchToolEnabled2 迁移到 isWebSearchToolEnabled3"
+   "source": "Installed extensions",
+   "target": "已安装扩展"
   },
   "026-042": {
-   "source": "Migrate MCP Tools Protection setting to Playwright Protection",
-   "target": "将 MCP 工具保护设置迁移为 Playwright Protection"
+   "source": "Installed extensions with warnings",
+   "target": "扩展已安装，但有警告"
   },
   "026-043": {
    "source": "Migrated User Rules",
    "target": "已迁移的用户规则"
   },
   "026-044": {
-   "source": "Mine",
-   "target": "我的"
+   "source": "Installing dependencies",
+   "target": "正在安装依赖项"
   },
   "026-045": {
-   "source": "Minimize interface animations",
-   "target": "尽量减少界面动画"
+   "source": "Installing extensions",
+   "target": "正在安装扩展"
   },
   "026-046": {
    "source": "Mirror VS Code RPCs into the DevTools Network tab and record local performance marks. Adds overhead, so leave it off unless you're debugging.",
@@ -5762,8 +5762,8 @@
    "target": "Monaco 字形存储缓冲区"
   },
   "027-001": {
-   "source": "Monaco rectangle renderer bind group",
-   "target": "Monaco 矩形渲染器绑定组"
+   "source": "Just now",
+   "target": "刚刚"
   },
   "027-002": {
    "source": "Monaco rectangle renderer command encoder",
@@ -5786,8 +5786,8 @@
    "target": "Monaco 矩形渲染器着色器模块"
   },
   "027-007": {
-   "source": "Monaco rectangle renderer shape buffer",
-   "target": "Monaco 矩形渲染器图形缓冲区"
+   "source": "Keep the other applied changes and merge this chat on top.",
+   "target": "保留其他已应用的更改，并在此基础上合并此对话。"
   },
   "027-008": {
    "source": "Monaco rectangle renderer uniform buffer",
@@ -5854,8 +5854,8 @@
    "target": "移到新窗口"
   },
   "027-024": {
-   "source": "Move this agent to the Cloud to run longer without your computer open.",
-   "target": "将此智能体移到云端，无需打开电脑即可运行更久。"
+   "source": "Limit must be a positive number",
+   "target": "上限必须为正数"
   },
   "027-025": {
    "source": "Move to",
@@ -5922,32 +5922,32 @@
    "target": "网络访问通知"
   },
   "027-041": {
-   "source": "Neutral",
-   "target": "中性"
+   "source": "Login with Enterprise (team) for local development",
+   "target": "使用企业版（团队）账号登录以进行本地开发"
   },
   "027-042": {
-   "source": "Never show again",
-   "target": "不再显示"
+   "source": "Login with Free for local development",
+   "target": "使用免费版账号登录以进行本地开发"
   },
   "027-043": {
-   "source": "New Agent with Model",
-   "target": "带模型的新智能体"
+   "source": "Login with Pro plan for local development",
+   "target": "使用 Pro 方案账号登录以进行本地开发"
   },
   "027-044": {
-   "source": "New MCP Configuration",
-   "target": "新建 MCP 配置"
+   "source": "Login with Pro Plus for local development",
+   "target": "使用 Pro Plus 账号登录以进行本地开发"
   },
   "027-045": {
-   "source": "New Project",
-   "target": "新建项目"
+   "source": "Login with Pro Plus Trial for local development",
+   "target": "使用 Pro Plus 试用账号登录以进行本地开发"
   },
   "027-046": {
-   "source": "New session",
-   "target": "新建会话"
+   "source": "Login with Pro Trial for local development",
+   "target": "使用 Pro 试用账号登录以进行本地开发"
   },
   "027-047": {
-   "source": "New Task",
-   "target": "新建任务"
+   "source": "Login with Ultra plan for local development",
+   "target": "使用 Ultra 方案账号登录以进行本地开发"
   },
   "027-048": {
    "source": "New Terminal",
@@ -6126,8 +6126,8 @@
    "target": "Lint 错误"
   },
   "025-032": {
-   "source": "Liora",
-   "target": "Liora"
+   "source": "Grant Repo Access",
+   "target": "授予仓库访问权限"
   },
   "025-033": {
    "source": "List directory",
@@ -6186,8 +6186,8 @@
    "target": "品红色"
   },
   "025-047": {
-   "source": "Make escape focus editor instead of closing the prompt bar",
-   "target": "让 Esc 聚焦编辑器而不是关闭命令栏"
+   "source": "Hidden dialogs",
+   "target": "隐藏的对话框"
   },
   "025-048": {
    "source": "Make the cursor.com profile page visible to anyone with the link",
@@ -6406,8 +6406,8 @@
    "target": "RetryBlobStore 重试次数（每次重新发起的操作计一次，不含首次尝试）"
   },
   "028-042": {
-   "source": "Number of streams that experienced at least one stall",
-   "target": "至少出现一次停滞的流数量"
+   "source": "Metadata",
+   "target": "元数据"
   },
   "028-043": {
    "source": "OAuth 2.0 Client ID",
@@ -6602,16 +6602,16 @@
    "target": "已向你的管理员发送 GitHub 安装请求。"
   },
   "023-031": {
-   "source": "GitHub Token",
-   "target": "GitHub Token"
+   "source": "Failed to approve cloud MCP auth",
+   "target": "批准云端 MCP 认证失败"
   },
   "023-032": {
    "source": "GitLab",
    "target": "GitLab"
   },
   "023-033": {
-   "source": "Give Agents a Computer",
-   "target": "为智能体提供计算机"
+   "source": "Failed to build image",
+   "target": "构建镜像失败"
   },
   "023-034": {
    "source": "Glass present",
@@ -6626,32 +6626,32 @@
    "target": "后退"
   },
   "023-037": {
-   "source": "Go Forward",
-   "target": "前进"
+   "source": "Failed to complete setup",
+   "target": "完成初始化失败"
   },
   "023-038": {
    "source": "Go to Cursor Settings -> General -> Privacy, and switch to 'Privacy Mode' to use cloud agents.",
    "target": "前往 Cursor 设置 -> 常规 -> 隐私，切换到“隐私模式”以使用云端智能体。"
   },
   "023-039": {
-   "source": "Go to End",
-   "target": "转到末尾"
+   "source": "Failed to create cloud workspace",
+   "target": "创建云端工作区失败"
   },
   "023-040": {
    "source": "Go to locations from a position in a file",
    "target": "从文件中的位置跳转到对应位置"
   },
   "023-041": {
-   "source": "Go to Next Change",
-   "target": "转到下一处更改"
+   "source": "Failed to get subagent conversation",
+   "target": "获取子智能体会话失败"
   },
   "023-042": {
-   "source": "Go to Next Diff File",
-   "target": "转到下一个差异文件"
+   "source": "Failed to install dependencies",
+   "target": "安装依赖失败"
   },
   "023-043": {
-   "source": "Go to Previous Change",
-   "target": "转到上一处更改"
+   "source": "Failed to install extensions",
+   "target": "安装扩展失败"
   },
   "023-044": {
    "source": "Go to Previous Diff File",
@@ -6670,56 +6670,56 @@
    "target": "图形"
   },
   "023-048": {
-   "source": "Graphite",
-   "target": "Graphite"
+   "source": "Failed to prepare environment",
+   "target": "准备环境失败"
   },
   "023-049": {
-   "source": "Great for individual developers",
-   "target": "适合个人开发者"
+   "source": "Failed to provision sandbox",
+   "target": "预置沙盒失败"
   },
   "023-050": {
-   "source": "Green",
-   "target": "绿色"
+   "source": "Failed to pull Docker images",
+   "target": "拉取 Docker 镜像失败"
   },
   "023-051": {
    "source": "Grid",
    "target": "网格"
   },
   "023-052": {
-   "source": "Group By",
-   "target": "分组依据"
+   "source": "Failed to reject aborted cloud MCP auth",
+   "target": "拒绝已中止的云端 MCP 认证失败"
   },
   "023-053": {
-   "source": "Group by options",
-   "target": "分组依据选项"
+   "source": "Failed to reject cloud MCP auth without an auth URL",
+   "target": "拒绝无认证 URL 的云端 MCP 认证失败"
   },
   "023-054": {
-   "source": "Grouping Options",
-   "target": "分组选项"
+   "source": "Failed to restore empty-state draft for local glass submit error",
+   "target": "无法恢复本地 Glass 提交错误的空状态草稿"
   },
   "023-055": {
-   "source": "Grouping property",
-   "target": "分组属性"
+   "source": "Failed to restore workspace files",
+   "target": "恢复工作区文件失败"
   },
   "023-056": {
    "source": "Heap",
    "target": "堆"
   },
   "023-057": {
-   "source": "Helios",
-   "target": "Helios"
+   "source": "Failed to run workspace setup",
+   "target": "运行工作区初始化失败"
   },
   "023-058": {
-   "source": "Helix",
-   "target": "Helix"
+   "source": "Failed to save snapshot",
+   "target": "保存快照失败"
   },
   "023-059": {
-   "source": "Help",
-   "target": "帮助"
+   "source": "Failed to set up repositories",
+   "target": "设置仓库失败"
   },
   "023-060": {
-   "source": "Help improve Cursor for everyone",
-   "target": "帮助改进 Cursor，让所有人受益"
+   "source": "Failed to skip cloud MCP auth",
+   "target": "跳过云端 MCP 认证失败"
   },
   "029-001": {
    "source": "Open Commands",
@@ -6814,8 +6814,8 @@
    "target": "打开 PR"
   },
   "029-024": {
-   "source": "Open pull request in browser",
-   "target": "在浏览器中打开拉取请求"
+   "source": "More models",
+   "target": "更多模型"
   },
   "029-025": {
    "source": "Open pull request links inside Cursor or the default browser",
@@ -6886,8 +6886,8 @@
    "target": "打开了此 PR"
   },
   "029-042": {
-   "source": "Opening background composer in external window...",
-   "target": "正在外部窗口中打开后台 Composer..."
+   "source": "Must provide either 'command' for stdio-based server or 'url' for SSE-based server",
+   "target": "必须为基于 stdio 的服务器提供 'command'，或为基于 SSE 的服务器提供 'url'"
   },
   "029-043": {
    "source": "Opens a list of resources in the changes editor to compare their contents.",
@@ -6922,12 +6922,12 @@
    "target": "可选 — 告诉我们原因…"
   },
   "029-051": {
-   "source": "Optional AutomationScope proto JSON value.",
-   "target": "可选的 AutomationScope proto JSON 值。"
+   "source": "Network diagnostics",
+   "target": "网络诊断"
   },
   "029-052": {
-   "source": "Optional display name carried into the prefilled Automations form.",
-   "target": "可选的显示名称，会带入预填的自动化表单。"
+   "source": "Network protocol",
+   "target": "网络协议"
   },
   "029-053": {
    "source": "Optional enabled state for the automation.",
@@ -6942,8 +6942,8 @@
    "target": "RPC 日志的可选文件夹（默认为 logs/exthost）。"
   },
   "029-056": {
-   "source": "Optional folder for RPC trace files. Defaults to logs/exthost.",
-   "target": "RPC 跟踪文件的可选文件夹。默认为 logs/exthost。"
+   "source": "New Automation",
+   "target": "新建自动化"
   },
   "029-057": {
    "source": "Optional HTTP headers to include with every request to the server",
@@ -7026,8 +7026,8 @@
    "target": "输出通道不可用。路径：cursorDiskKV="
   },
   "030-017": {
-   "source": "Override OpenAI Base URL",
-   "target": "覆盖 OpenAI Base URL"
+   "source": "No conversation found for subagent composer",
+   "target": "未找到子智能体 Composer 的会话"
   },
   "030-018": {
    "source": "Override the Cursor user interface typeface",
@@ -7150,8 +7150,8 @@
    "target": "智能体完成或需要关注时播放声音"
   },
   "030-048": {
-   "source": "Please configure your environment for cloud agents.",
-   "target": "请为云端智能体配置环境。"
+   "source": "notebook.globalToolbarShowLabel",
+   "target": "notebook.globalToolbarShowLabel"
   },
   "030-049": {
    "source": "Please quit and reopen for the activity bar to be displayed vertically.",
@@ -7258,12 +7258,12 @@
    "target": "审查提供方"
   },
   "033-015": {
-   "source": "Review the configuration before adding it to your MCP servers.",
-   "target": "添加前先查看配置，再添加到 MCP 服务器"
+   "source": "Prepared environment",
+   "target": "环境已准备"
   },
   "033-016": {
-   "source": "Review this command content carefully before proceeding",
-   "target": "继续前请仔细检查此命令内容"
+   "source": "Prepared environment with warnings",
+   "target": "环境已准备，但有警告"
   },
   "033-017": {
    "source": "Review this external prompt carefully before proceeding",
@@ -7274,8 +7274,8 @@
    "target": "继续前请仔细检查此规则内容"
   },
   "033-019": {
-   "source": "Reviewed Cursor Automation Workflow proto JSON. Include triggers, actions, prompts, model, gitConfig, agentOptions, memoryEnabled, etc. The exact same shape passed to create_automation.workflow.",
-   "target": "已审查的 Cursor 自动化工作流 proto JSON。包含触发器、操作、提示词、模型、gitConfig、agentOptions、memoryEnabled 等。此结构与传给 create_automation.workflow 的完全相同。"
+   "source": "Preparing environment",
+   "target": "正在准备环境"
   },
   "033-020": {
    "source": "Rigel",
@@ -7310,20 +7310,20 @@
    "target": "无需批准或沙盒即可运行所有命令"
   },
   "033-028": {
-   "source": "Run and coordinate multiple tasks in parallel",
-   "target": "并行运行并协调多个任务"
+   "source": "Pro Login",
+   "target": "Pro 登录"
   },
   "033-029": {
-   "source": "Run command",
-   "target": "运行命令"
+   "source": "Pro Plus Login",
+   "target": "Pro Plus 登录"
   },
   "033-030": {
-   "source": "Run Everything enabled for this agent",
-   "target": "已为此智能体启用 Run Everything"
+   "source": "Pro Plus Trial Login",
+   "target": "Pro Plus 试用登录"
   },
   "033-031": {
-   "source": "Run Everything is already enabled for this agent",
-   "target": "此智能体已启用 Run Everything"
+   "source": "Pro Trial Login",
+   "target": "Pro 试用登录"
   },
   "033-032": {
    "source": "Run Everything Mode Warning",
@@ -7394,36 +7394,36 @@
    "target": "保存文件"
   },
   "033-049": {
-   "source": "Save Image As...",
-   "target": "图片另存为..."
+   "source": "Provisioned sandbox",
+   "target": "沙盒已预配"
   },
   "033-050": {
-   "source": "Schedule",
-   "target": "计划"
+   "source": "Provisioned sandbox with warnings",
+   "target": "沙盒已预配，但有警告"
   },
   "033-051": {
-   "source": "Screen recording",
-   "target": "屏幕录制"
+   "source": "Provisioning sandbox",
+   "target": "正在预配沙盒"
   },
   "033-052": {
    "source": "Scroll editor in the given direction",
    "target": "按指定方向滚动编辑器"
   },
   "033-053": {
-   "source": "Search Agents...",
-   "target": "搜索智能体..."
+   "source": "Pull request fetch timed out",
+   "target": "拉取请求获取超时"
   },
   "033-054": {
-   "source": "Search Google for ",
-   "target": "在 Google 中搜索"
+   "source": "Pulled Docker images",
+   "target": "Docker 镜像已拉取"
   },
   "033-055": {
-   "source": "Search icons...",
-   "target": "搜索图标..."
+   "source": "Pulled Docker images with warnings",
+   "target": "Docker 镜像已拉取，但有警告"
   },
   "033-056": {
-   "source": "Search or enter URL",
-   "target": "搜索或输入 URL"
+   "source": "Pulling Docker images",
+   "target": "正在拉取 Docker 镜像"
   },
   "033-057": {
    "source": "Search or Paste Link",
@@ -7878,8 +7878,8 @@
    "target": "仓库不可用"
   },
   "032-050": {
-   "source": "Request an agent to review your code",
-   "target": "让智能体审查你的代码"
+   "source": "Plan creation failed",
+   "target": "方案创建失败"
   },
   "032-051": {
    "source": "Request received",
@@ -7914,8 +7914,8 @@
    "target": "重置缩放"
   },
   "032-059": {
-   "source": "Reset zoom to 100%",
-   "target": "将缩放重置为 100%"
+   "source": "Please enter a limit amount",
+   "target": "请输入额度上限"
   },
   "032-060": {
    "source": "Resident bytes held in the CachedBlobStore in-memory cache, sampled on flush",
@@ -7942,12 +7942,12 @@
    "target": "安全"
   },
   "034-006": {
-   "source": "Seeded response comparison",
-   "target": "种子响应比较"
+   "source": "Ran workspace setup",
+   "target": "已运行工作区初始化"
   },
   "034-007": {
-   "source": "Select a local marketplace folder",
-   "target": "选择本地市场文件夹"
+   "source": "Ran workspace setup with warnings",
+   "target": "已运行工作区初始化，有警告"
   },
   "034-008": {
    "source": "Set the maximum width of Agent conversations",
@@ -8238,8 +8238,8 @@
    "target": "斜杠命令"
   },
   "035-020": {
-   "source": "SlowStartup",
-   "target": "SlowStartup"
+   "source": "Required domains",
+   "target": "必需域名"
   },
   "035-021": {
    "source": "Smart Allowlist",
@@ -8294,16 +8294,16 @@
    "target": "因错误停止"
   },
   "035-034": {
-   "source": "Squash & Merge",
-   "target": "压缩并合并"
+   "source": "Restored workspace files",
+   "target": "已恢复工作区文件"
   },
   "035-035": {
-   "source": "Squash all commits into one",
-   "target": "将所有提交压缩为一个"
+   "source": "Restored workspace files with warnings",
+   "target": "已恢复工作区文件，但有警告"
   },
   "035-036": {
-   "source": "Squash merge",
-   "target": "压缩合并"
+   "source": "Restoring workspace files",
+   "target": "正在恢复工作区文件"
   },
   "035-037": {
    "source": "Stale snapshot from warm fork",
@@ -8438,8 +8438,8 @@
    "target": "全部撤销"
   },
   "038-010": {
-   "source": "Undo all pending changes",
-   "target": "撤销所有待处理的更改"
+   "source": "Some items could not be loaded",
+   "target": "部分项目无法加载"
   },
   "038-011": {
    "source": "Undo Edits",
@@ -8514,16 +8514,16 @@
    "target": "更新待办"
   },
   "038-029": {
-   "source": "Upgrade Available",
-   "target": "可升级"
+   "source": "Started agent services",
+   "target": "已启动智能体服务"
   },
   "038-030": {
-   "source": "Upgrade to Pro+",
-   "target": "升级到 Pro+"
+   "source": "Started agent services with warnings",
+   "target": "智能体服务已启动，但有警告"
   },
   "038-031": {
-   "source": "Upgrade to Ultra",
-   "target": "升级到 Ultra"
+   "source": "Starting agent services",
+   "target": "正在启动智能体服务"
   },
   "038-032": {
    "source": "Upgrade to use Cloud Agents",
@@ -8538,8 +8538,8 @@
    "target": "正在上传进程快照到 Cursor..."
   },
   "038-035": {
-   "source": "Uploading snapshot to Cursor...",
-   "target": "正在上传快照到 Cursor..."
+   "source": "Stash your local changes (including untracked files) so you can apply them later.",
+   "target": "暂存本地更改（包括未跟踪的文件），以便稍后应用。"
   },
   "038-036": {
    "source": "URI or URI string to remove from recently opened.",
@@ -8686,8 +8686,8 @@
    "target": "技术负责人"
   },
   "036-012": {
-   "source": "Suggestions While Commenting",
-   "target": "注释时提供建议"
+   "source": "Running workspace setup",
+   "target": "正在运行工作区初始化"
   },
   "036-013": {
    "source": "Summarize the conversation",
@@ -8734,16 +8734,16 @@
    "target": "表格操作"
   },
   "036-024": {
-   "source": "Table copied to clipboard",
-   "target": "表格已复制到剪贴板"
+   "source": "Saved snapshot",
+   "target": "已保存快照"
   },
   "036-025": {
-   "source": "Tags",
-   "target": "标签"
+   "source": "Saved snapshot with warnings",
+   "target": "已保存快照，但有警告"
   },
   "036-026": {
-   "source": "Tail row is not mounted",
-   "target": "尾部行未挂载"
+   "source": "Saving snapshot for faster startup",
+   "target": "正在保存快照以加快启动"
   },
   "036-027": {
    "source": "Take Screenshot",
@@ -8766,8 +8766,8 @@
    "target": "任务模型"
   },
   "036-032": {
-   "source": "Task title",
-   "target": "任务标题"
+   "source": "Search and Replace",
+   "target": "搜索和替换"
   },
   "036-033": {
    "source": "Task title must be a non-empty string",
@@ -8834,8 +8834,8 @@
    "target": "云端智能体要求在工作区 Git 仓库根目录打开。请打开 Git 仓库的根文件夹，而不是子文件夹。"
   },
   "036-049": {
-   "source": "The connection stalled. Please try again.",
-   "target": "连接中断。请重试。"
+   "source": "Select Folder",
+   "target": "选择文件夹"
   },
   "036-050": {
    "source": "The connection to the agent host dropped before this message was sent. Click Retry to continue.",
@@ -8862,8 +8862,8 @@
    "target": "当前值无法保留，该字段将为空。"
   },
   "036-056": {
-   "source": "The editor view type or language ID if known",
-   "target": "编辑器视图类型或语言 ID（如果已知）"
+   "source": "Self-hosted",
+   "target": "自托管"
   },
   "036-057": {
    "source": "The extension id (ignored).",
@@ -8934,24 +8934,24 @@
    "target": "此图表仅显示按请求计费用户的按需用量。不显示套餐内用量。"
   },
   "037-014": {
-   "source": "This chat was created in an older Cursor version and is no longer supported. Please start a new chat.",
-   "target": "此对话是在较旧的 Cursor 版本中创建的，已不再受支持。请新建对话。"
+   "source": "Set Up Cloud Agents",
+   "target": "设置云端智能体"
   },
   "037-015": {
    "source": "This glob pattern doesn't match any files in the workspace",
    "target": "此 glob 模式与工作区中的任何文件都不匹配"
   },
   "037-016": {
-   "source": "This is a fake bug generated for frontend development. The agent_review_fake_dev feature flag is enabled.",
-   "target": "这是为前端开发生成的假 Bug。agent_review_fake_dev 功能开关已启用。"
+   "source": "Set up repositories",
+   "target": "仓库设置完成"
   },
   "037-017": {
-   "source": "This is a test MCP notification for development",
-   "target": "这是用于开发的测试 MCP 通知"
+   "source": "Set up repositories with warnings",
+   "target": "仓库设置完成但有警告"
   },
   "037-018": {
-   "source": "This is the first message.",
-   "target": "这是第一条消息。"
+   "source": "Setting up repositories",
+   "target": "正在设置仓库"
   },
   "037-019": {
    "source": "This is the second message, which is de-emphasized.",
@@ -9014,8 +9014,8 @@
    "target": "时间线 [内部]"
   },
   "037-034": {
-   "source": "Title Bar",
-   "target": "标题栏"
+   "source": "Show more",
+   "target": "显示更多"
   },
   "037-035": {
    "source": "To use Cloud Agents, please open a Git repository in the workspace.",
@@ -9226,8 +9226,8 @@
    "target": "↗"
   },
   "040-027": {
-   "source": "⇧Tab",
-   "target": "⇧Tab"
+   "source": "Todo update failed",
+   "target": "待办更新失败"
   },
   "040-028": {
    "source": "⚠️ Warning: Updates Apply Automatically",
@@ -9242,8 +9242,8 @@
    "target": "$(add) 示例选项 Alpha"
   },
   "040-031": {
-   "source": "0 * * * *",
-   "target": "0 * * * *"
+   "source": "Tool call failed",
+   "target": "工具调用失败"
   },
   "040-032": {
    "source": "Add a Custom MCP",
@@ -9314,16 +9314,16 @@
    "target": "操作仍在进行中"
   },
   "040-049": {
-   "source": "Actions Palette",
-   "target": "操作面板"
+   "source": "Turn Off and Restart",
+   "target": "关闭并重启"
   },
   "040-050": {
    "source": "Activate Browser Tab",
    "target": "激活浏览器标签页"
   },
   "040-051": {
-   "source": "Active Line",
-   "target": "当前行"
+   "source": "Turn On and Restart",
+   "target": "开启并重启"
   },
   "040-052": {
    "source": "Active Searches",
@@ -9346,8 +9346,8 @@
    "target": "添加邮箱，用逗号分隔"
   },
   "040-057": {
-   "source": "Add folder",
-   "target": "添加文件夹"
+   "source": "Ultra Login",
+   "target": "Ultra 登录"
   },
   "040-058": {
    "source": "Add Folder",
@@ -9398,8 +9398,8 @@
    "target": "智能体编辑"
   },
   "041-010": {
-   "source": "Agent exec temporary-unavailable simulation is only available in development builds.",
-   "target": "智能体执行临时不可用模拟仅在开发版本中可用。"
+   "source": "Undo other applied chats before applying this one.",
+   "target": "应用此对话前，先撤销其他已应用的对话。"
   },
   "041-011": {
    "source": "Agent Exec: Toggle Simulate Temporary Unavailable",
@@ -9454,8 +9454,8 @@
    "target": "所有运行"
   },
   "041-024": {
-   "source": "All Tasks",
-   "target": "所有任务"
+   "source": "update title",
+   "target": "更新标题"
   },
   "041-025": {
    "source": "Allow CLI to access desktop agents",
@@ -9586,8 +9586,8 @@
    "target": "归档以下全部"
   },
   "041-057": {
-   "source": "Are you sure you want to close this window?",
-   "target": "确定要关闭此窗口吗？"
+   "source": "User Rule",
+   "target": "用户规则"
   },
   "041-058": {
    "source": "Artifact Markdown Renderer",
@@ -9630,8 +9630,8 @@
    "target": "在 GitHub 上查看差异"
   },
   "039-008": {
-   "source": "View groupOrder is ignored unless groupBy references a select property",
-   "target": "除非 groupBy 引用了选择属性，否则视图的 groupOrder 会被忽略"
+   "source": "Sync your local skills to use them with Cloud Agents. Any changes will update automatically.",
+   "target": "同步本地技能，以便在云端智能体中使用。任何更改都会自动更新。"
   },
   "039-009": {
    "source": "View Hooks",
@@ -9682,8 +9682,8 @@
    "target": "正在等待环境…"
   },
   "039-021": {
-   "source": "WB",
-   "target": "WB"
+   "source": "Task failed",
+   "target": "任务失败"
   },
   "039-022": {
    "source": "We were unable to load your usage metrics. Please try again later.",
@@ -9918,8 +9918,8 @@
    "target": "运行时可用"
   },
   "042-020": {
-   "source": "Avg",
-   "target": "平均"
+   "source": "Waiting for a worker",
+   "target": "等待工作进程"
   },
   "042-021": {
    "source": "Awaiting review from",
@@ -10046,8 +10046,8 @@
    "target": "带信息的按钮"
   },
   "042-052": {
-   "source": "Cache Current Chunks",
-   "target": "缓存当前分块"
+   "source": "Worker ready",
+   "target": "工作进程就绪"
   },
   "042-053": {
    "source": "Cache Keys:",
@@ -10126,12 +10126,12 @@
    "target": "单元格 ID"
   },
   "043-012": {
-   "source": "Certificate Error",
-   "target": "证书错误"
+   "source": "your included API usage",
+   "target": "已包含的 API 用量"
   },
   "043-013": {
-   "source": "Change Filter",
-   "target": "更改筛选"
+   "source": "your included total usage",
+   "target": "已包含的总用量"
   },
   "043-014": {
    "source": "Changed files",
@@ -10186,12 +10186,12 @@
    "target": "选择一个操作以模拟不同的加载状态。"
   },
   "043-027": {
-   "source": "Choose between light, dark, or high contrast themes",
-   "target": "在浅色、深色或高对比度主题之间选择"
+   "source": "[AgentPanel] Failed to clone repository for tiled empty tile:",
+   "target": "[AgentPanel] 无法为平铺空图块克隆仓库："
   },
   "043-028": {
-   "source": "Choose team Named Agents to show in your Glass sidebar.",
-   "target": "选择要在 Glass 侧边栏中显示的团队命名智能体。"
+   "source": "[AgentPanel] Failed to clone repository:",
+   "target": "[AgentPanel] 克隆仓库失败："
   },
   "043-029": {
    "source": "Choose whether the theme behaves like a light or dark theme",
@@ -10210,8 +10210,8 @@
    "target": "Claude 4 Opus（MAX 模式，带渐变）"
   },
   "043-033": {
-   "source": "Claude 4 Sonnet (regular)",
-   "target": "Claude 4 Sonnet（常规）"
+   "source": "⌘L",
+   "target": "⌘L"
   },
   "043-034": {
    "source": "Clear all metadata",
@@ -10242,8 +10242,8 @@
    "target": "清除日志"
   },
   "043-041": {
-   "source": "Clear Output",
-   "target": "清除输出"
+   "source": "2m ago",
+   "target": "2分钟前"
   },
   "043-042": {
    "source": "Clear Queued Message Focus",
@@ -10418,8 +10418,8 @@
    "target": "提交并创建 PR"
   },
   "044-025": {
-   "source": "Commit → present",
-   "target": "提交 → 当前"
+   "source": "Agent is setting up the environment. You can still add secrets or update network access. Install scripts will be available after the first snapshot is created.",
+   "target": "智能体正在初始化环境。你仍可添加密钥或更新网络访问。首次快照创建后即可使用安装脚本。"
   },
   "044-026": {
    "source": "Commit all changes and push",
@@ -10466,8 +10466,8 @@
    "target": "Composer ID"
   },
   "044-037": {
-   "source": "Configure browser automation",
-   "target": "配置浏览器自动化"
+   "source": "Allow cloud agents to run in your local environment.",
+   "target": "允许云端智能体在本地环境中运行。"
   },
   "044-038": {
    "source": "Configure local agent",
@@ -10650,8 +10650,8 @@
    "target": "复制拉取请求链接"
   },
   "045-023": {
-   "source": "Copy Relative Path",
-   "target": "复制相对路径"
+   "source": "Authenticating",
+   "target": "认证中"
   },
   "045-024": {
    "source": "Copy Relative Path of Active File",
@@ -10810,8 +10810,8 @@
    "target": "由 Evan You 创建"
   },
   "046-003": {
-   "source": "Created by Guido van Rossum",
-   "target": "由 Guido van Rossum 创建"
+   "source": "BrowserTab",
+   "target": "BrowserTab"
   },
   "046-004": {
    "source": "Created by Linus Torvalds",
@@ -10902,8 +10902,8 @@
    "target": "自定义定位的悬浮提示，包含更长的说明并换行为多行，以演示其行为"
   },
   "046-026": {
-   "source": "Custom styled info ring",
-   "target": "自定义样式的信息环"
+   "source": "CanvasDesignMode",
+   "target": "CanvasDesignMode"
   },
   "046-027": {
    "source": "Cycle Instance Selector",
@@ -10942,8 +10942,8 @@
    "target": "调试模式"
   },
   "046-036": {
-   "source": "Debug: Open Skill Publishing Logs",
-   "target": "调试：打开技能发布日志"
+   "source": "Chat",
+   "target": "对话"
   },
   "046-037": {
    "source": "Default info ring",
@@ -10962,8 +10962,8 @@
    "target": "删除标注"
   },
   "046-041": {
-   "source": "Delete automation",
-   "target": "删除自动化"
+   "source": "Checking...",
+   "target": "检查中..."
   },
   "046-042": {
    "source": "Delete Cloud-Agent Cache",
@@ -11130,8 +11130,8 @@
    "target": "差异焦点"
   },
   "047-023": {
-   "source": "Diff line and word fills, gutter tints, and accent strips, rendered by the product diff.",
-   "target": "由产品差异渲染的行与词的填充、行号槽着色和强调色条。"
+   "source": "Close subscriptions tray",
+   "target": "关闭订阅托盘"
   },
   "047-024": {
    "source": "Diff Meter",
@@ -11142,8 +11142,8 @@
    "target": "差异视图"
   },
   "047-026": {
-   "source": "Diff with hidden decorations",
-   "target": "带隐藏装饰的差异"
+   "source": "Close triggers tray",
+   "target": "关闭触发器托盘"
   },
   "047-027": {
    "source": "Disable (Workspace)",
@@ -11382,8 +11382,8 @@
    "target": "按 ID、路径或 Git 远程筛选…"
   },
   "049-026": {
-   "source": "Filter files",
-   "target": "筛选文件"
+   "source": "Creating Branch...",
+   "target": "正在创建分支..."
   },
   "049-027": {
    "source": "Filter output channels...",
@@ -11798,8 +11798,8 @@
    "target": "索引大小"
   },
   "052-010": {
-   "source": "index.html",
-   "target": "index.html"
+   "source": "Extensions",
+   "target": "扩展"
   },
   "052-011": {
    "source": "index.php",
@@ -11878,12 +11878,12 @@
    "target": "安装脚本"
   },
   "052-030": {
-   "source": "Installed",
-   "target": "已安装"
+   "source": "Figma",
+   "target": "Figma"
   },
   "052-031": {
-   "source": "Installing extensions...",
-   "target": "正在安装扩展..."
+   "source": "Figma Design File",
+   "target": "Figma 设计文件"
   },
   "052-032": {
    "source": "Interactive Markdown",
@@ -11910,16 +11910,16 @@
    "target": "iPad Air 11\""
   },
   "052-038": {
-   "source": "iPad mini",
-   "target": "iPad mini"
+   "source": "Files to exclude (e.g. *.test.ts, dist/**)",
+   "target": "要排除的文件（例如 *.test.ts、dist/**）"
   },
   "052-039": {
    "source": "iPad Pro 13\"",
    "target": "iPad Pro 13\""
   },
   "052-040": {
-   "source": "iPhone 16e",
-   "target": "iPhone 16e"
+   "source": "Files to include (e.g. *.ts, src/**/*.py)",
+   "target": "要包含的文件（例如 *.ts、src/**/*.py）"
   },
   "052-041": {
    "source": "iPhone 17",
@@ -11982,8 +11982,8 @@
    "target": "跳到上一个文件"
   },
   "052-056": {
-   "source": "Jump to Previous User Message",
-   "target": "跳到上一条用户消息"
+   "source": "Find in terminal",
+   "target": "在终端中查找"
   },
   "052-057": {
    "source": "Keep Open",
@@ -12138,8 +12138,8 @@
    "target": "Llama 3.2 3B"
   },
   "053-035": {
-   "source": "Load",
-   "target": "加载"
+   "source": "for cloud agents",
+   "target": "用于云端智能体"
   },
   "053-036": {
    "source": "Load Consecutive Images",
@@ -12194,8 +12194,8 @@
    "target": "正在加载差异…"
   },
   "053-049": {
-   "source": "Loading environments…",
-   "target": "正在加载环境…"
+   "source": "from pull request tab",
+   "target": "从拉取请求 Tab"
   },
   "053-050": {
    "source": "Loading file",
@@ -12358,12 +12358,12 @@
    "target": "MAX 模式下带思考的 hb 模型（大脑 + 渐变 + 徽章）"
   },
   "051-030": {
-   "source": "header.h",
-   "target": "header.h"
+   "source": "Edited math.ts",
+   "target": "已编辑 math.ts"
   },
   "051-031": {
-   "source": "Hello 1",
-   "target": "你好 1"
+   "source": "Edited README.md",
+   "target": "已编辑 README.md"
   },
   "051-032": {
    "source": "Hello 2",
@@ -12398,16 +12398,16 @@
    "target": "隐藏性能栏"
   },
   "051-040": {
-   "source": "Hide Sidebar",
-   "target": "隐藏侧边栏"
+   "source": "Enable extended thinking for complex reasoning",
+   "target": "为复杂推理启用扩展思考"
   },
   "051-041": {
-   "source": "High Contrast Theme",
-   "target": "高对比度主题"
+   "source": "Enable extended thinking for complex reasoning tasks",
+   "target": "为复杂推理任务启用扩展思考"
   },
   "051-042": {
-   "source": "High Priority",
-   "target": "高优先级"
+   "source": "Enable local self-hosted workers",
+   "target": "启用本地自托管工作进程"
   },
   "051-043": {
    "source": "Highlighted (navigation)",
@@ -12430,8 +12430,8 @@
    "target": "水合"
   },
   "051-048": {
-   "source": "Hydration is lazy: cache reads happen when an explorer provider is registered for a workspace, and writes happen after provider fetch succeeds.",
-   "target": "水合是惰性的：缓存读取在某个工作区注册了 explorer 提供程序时发生，写入则在提供程序获取成功后发生。"
+   "source": "Environment is ready to save. You can still make changes before saving.",
+   "target": "环境已就绪，可以保存。保存前仍可修改。"
   },
   "051-049": {
    "source": "Icon",
@@ -12542,8 +12542,8 @@
    "target": "本地完整 Self-Driving"
   },
   "054-016": {
-   "source": "Local override of cursor_new_colors",
-   "target": "cursor_new_colors 的本地覆盖"
+   "source": "Git Actions",
+   "target": "Git 操作"
   },
   "054-017": {
    "source": "Local self-driving could not be started for this task. Try again from the agent panel.",
@@ -12562,8 +12562,8 @@
    "target": "要退出登录吗？"
   },
   "054-021": {
-   "source": "Long Content",
-   "target": "长内容"
+   "source": "Git Repository",
+   "target": "Git 仓库"
   },
   "054-022": {
    "source": "Long Content w/ Buttons",
@@ -12622,8 +12622,8 @@
    "target": "邮箱流永久失败；不再重连"
   },
   "054-036": {
-   "source": "Mailbox stream failed; reconnecting",
-   "target": "邮箱流失败；正在重连"
+   "source": "Global",
+   "target": "全局"
   },
   "054-037": {
    "source": "Mailbox stream idle; nothing streamable",
@@ -13078,20 +13078,20 @@
    "target": "收窄"
   },
   "055-030": {
-   "source": "Merge status is being calculated. Refresh if it does not resolve.",
-   "target": "正在计算合并状态。若长时间未解决，请刷新。"
+   "source": "in committed scope",
+   "target": "在已提交范围"
   },
   "055-031": {
-   "source": "Merge status is being determined...",
-   "target": "正在确定合并状态…"
+   "source": "in staged scope",
+   "target": "在已暂存范围"
   },
   "055-032": {
    "source": "Merge status unavailable",
    "target": "合并状态不可用"
   },
   "055-033": {
-   "source": "Merge when ready",
-   "target": "就绪后合并"
+   "source": "in unstaged scope",
+   "target": "在未暂存范围"
   },
   "055-034": {
    "source": "Merged · #128",
@@ -13202,12 +13202,12 @@
    "target": "多阶段"
   },
   "056-001": {
-   "source": "Multiple Actions",
-   "target": "多个操作"
+   "source": "Installing...",
+   "target": "安装中..."
   },
   "056-002": {
-   "source": "Multiple folders",
-   "target": "多个文件夹"
+   "source": "Integrations",
+   "target": "集成"
   },
   "056-003": {
    "source": "Multiple Notifications",
@@ -13402,8 +13402,8 @@
    "target": "此建议没有可用详情。"
   },
   "056-051": {
-   "source": "No diffs match the current filter.",
-   "target": "没有符合当前筛选条件的差异。"
+   "source": "Let's kick something off",
+   "target": "开始做点什么吧"
   },
   "056-052": {
    "source": "No extensions to display",
@@ -13442,8 +13442,8 @@
    "target": "无生命周期服务"
   },
   "057-001": {
-   "source": "No linked agents",
-   "target": "无关联的智能体"
+   "source": "Link Account",
+   "target": "关联账号"
   },
   "057-002": {
    "source": "No live orchestration yet.",
@@ -13566,8 +13566,8 @@
    "target": "没有符合这些筛选条件的 SCM 请求"
   },
   "057-032": {
-   "source": "No SCM requests yet",
-   "target": "尚无 SCM 请求"
+   "source": "Loading repos…",
+   "target": "正在加载仓库…"
   },
   "057-033": {
    "source": "No secrets yet",
@@ -13586,8 +13586,8 @@
    "target": "无法从 IDE 导入主题"
   },
   "057-037": {
-   "source": "No time zones found",
-   "target": "未找到时区"
+   "source": "Loading side chat",
+   "target": "正在加载侧边对话"
   },
   "057-038": {
    "source": "No workspace access",
@@ -13610,8 +13610,8 @@
    "target": "正常"
   },
   "057-043": {
-   "source": "Normal - Selected",
-   "target": "正常 - 已选中"
+   "source": "Local agent runtime",
+   "target": "本地智能体运行时"
   },
   "057-044": {
    "source": "Open in Grok Bot Harness",
@@ -13706,8 +13706,8 @@
    "target": "路径："
   },
   "059-007": {
-   "source": "PDF bytes unavailable",
-   "target": "PDF 字节不可用"
+   "source": "Mermaid",
+   "target": "Mermaid"
   },
   "059-008": {
    "source": "Pending Opens",
@@ -13774,8 +13774,8 @@
    "target": "方案"
   },
   "059-024": {
-   "source": "Please wait while the operation is being processed...",
-   "target": "操作处理中，请稍候..."
+   "source": "Move",
+   "target": "移动"
   },
   "059-025": {
    "source": "Plugin skills selected for Cloud can't run in this environment. Remove them or switch back to Cloud.",
@@ -14058,8 +14058,8 @@
    "target": "最近的操作"
   },
   "060-035": {
-   "source": "Recent agents switcher",
-   "target": "最近智能体切换器"
+   "source": "No matching side chats",
+   "target": "没有匹配的侧边对话"
   },
   "060-036": {
    "source": "Recent Files",
@@ -14070,8 +14070,8 @@
    "target": "最近的工作区"
   },
   "060-038": {
-   "source": "Recently changed",
-   "target": "最近更改"
+   "source": "No MCP tools are connected yet.",
+   "target": "尚未连接任何 MCP 工具"
   },
   "060-039": {
    "source": "Recently Viewed",
@@ -14102,8 +14102,8 @@
    "target": "正在重新连接"
   },
   "060-046": {
-   "source": "Redo",
-   "target": "重做"
+   "source": "No project agents have access yet.",
+   "target": "尚无项目智能体拥有访问权限"
   },
   "060-047": {
    "source": "Refer friends, earn usage credits",
@@ -14142,8 +14142,8 @@
    "target": "从此智能体移除插件"
   },
   "060-056": {
-   "source": "Remove annotation",
-   "target": "移除标注"
+   "source": "No repos selected",
+   "target": "未选择仓库"
   },
   "060-057": {
    "source": "Remove Favorite",
@@ -14202,8 +14202,8 @@
    "target": "重新打开上次关闭的对话 Tab"
   },
   "061-011": {
-   "source": "Reopen Last Closed Tab",
-   "target": "重新打开上次关闭的 Tab"
+   "source": "No workspace",
+   "target": "无工作区"
   },
   "061-012": {
    "source": "Rulers",
@@ -14242,12 +14242,12 @@
    "target": "仓库"
   },
   "061-021": {
-   "source": "Repositories:",
-   "target": "仓库："
+   "source": "Notion",
+   "target": "Notion"
   },
   "061-022": {
-   "source": "Repository URL (https or SSH)",
-   "target": "仓库 URL（https 或 SSH）"
+   "source": "Notion Page",
+   "target": "Notion 页面"
   },
   "061-023": {
    "source": "Reproduction Steps",
@@ -14414,8 +14414,8 @@
    "target": "选择后端..."
   },
   "063-004": {
-   "source": "Select limit-hit stage...",
-   "target": "选择达到限制阶段..."
+   "source": "Please update your Cursor application",
+   "target": "请更新你的 Cursor 应用"
   },
   "063-005": {
    "source": "Select login type...",
@@ -14502,8 +14502,8 @@
    "target": "多个智能体任务正在争用系统资源。减少并行运行数量可保持系统响应流畅。"
   },
   "063-026": {
-   "source": "Share an invite link or send invites by email.",
-   "target": "分享邀请链接或通过电子邮件发送邀请。"
+   "source": "Prevent Agent from automatically running Browser tools",
+   "target": "阻止智能体自动运行浏览器工具"
   },
   "063-027": {
    "source": "Shell presented",
@@ -14594,8 +14594,8 @@
    "target": "侧边对话无法移动到其他位置"
   },
   "063-049": {
-   "source": "Sign in to view and edit your profile.",
-   "target": "登录后可查看和编辑个人资料。"
+   "source": "Project Plan",
+   "target": "项目方案"
   },
   "063-050": {
    "source": "Simple Code Render",
@@ -14614,8 +14614,8 @@
    "target": "模拟新用户"
   },
   "063-054": {
-   "source": "Simulate slower responses with the new limit-hit tray.",
-   "target": "使用新的达到限制托盘模拟较慢的响应。"
+   "source": "Pull Request",
+   "target": "拉取请求"
   },
   "063-055": {
    "source": "Simulate the model auto-switch notice.",
@@ -14638,8 +14638,8 @@
    "target": "跳过模式切换"
   },
   "063-060": {
-   "source": "Skip Pending Shell Tool",
-   "target": "跳过待处理的 Shell 工具"
+   "source": "Pushing...",
+   "target": "推送中..."
   },
   "058-001": {
    "source": "Open (scale)",
@@ -14770,8 +14770,8 @@
    "target": "打开运行"
   },
   "058-033": {
-   "source": "Open Section Headers Quick Pick",
-   "target": "打开章节标题快速选择"
+   "source": "Manage the processes started by your agent to keep your computer responsive.",
+   "target": "管理由你的智能体启动的进程，保持电脑响应流畅。"
   },
   "058-034": {
    "source": "Open Side Chat",
@@ -14802,8 +14802,8 @@
    "target": "打开连接流程以添加 SSH 工作区"
   },
   "058-041": {
-   "source": "Opened",
-   "target": "已打开"
+   "source": "Mark as Done",
+   "target": "标记为完成"
   },
   "058-042": {
    "source": "Opening destination workspace...",
@@ -14814,8 +14814,8 @@
    "target": "操作"
   },
   "058-044": {
-   "source": "Operation Complete",
-   "target": "操作完成"
+   "source": "Markdown Document",
+   "target": "Markdown 文档"
   },
   "058-045": {
    "source": "Operation in progress...",
@@ -14846,8 +14846,8 @@
    "target": "指向页面上的任意元素，告诉智能体要修复什么。"
   },
   "058-052": {
-   "source": "Original Text Lines",
-   "target": "原始文本行"
+   "source": "Maximum context window size",
+   "target": "最大上下文窗口大小"
   },
   "058-053": {
    "source": "Other Agents",
@@ -14894,8 +14894,8 @@
    "target": "保存自动化"
   },
   "062-004": {
-   "source": "Save Environment as",
-   "target": "环境另存为"
+   "source": "Open Privacy Settings",
+   "target": "打开隐私设置"
   },
   "062-005": {
    "source": "Save to workspace",
@@ -14962,8 +14962,8 @@
    "target": "滚动智能体面板到底部"
   },
   "062-021": {
-   "source": "Scroll Agent Panel to Top",
-   "target": "滚动智能体面板到顶部"
+   "source": "Opening chat",
+   "target": "正在打开对话"
   },
   "062-022": {
    "source": "Scroll Agent Panel Up",
@@ -15146,16 +15146,16 @@
    "target": "出错了。"
   },
   "064-007": {
-   "source": "Source Control",
-   "target": "源代码管理"
+   "source": "Ran",
+   "target": "已运行"
   },
   "064-008": {
-   "source": "Spans may nest; do not sum durations (e.g. require + pre-workbench can extend past didPresentShell).",
-   "target": "跨度可以嵌套；不要累加时长（例如 require + pre-workbench 可能超出 didPresentShell）。"
+   "source": "Ran focused tests",
+   "target": "已运行聚焦测试"
   },
   "064-009": {
-   "source": "Speculative",
-   "target": "推测性"
+   "source": "Ran type-check",
+   "target": "已运行类型检查"
   },
   "064-010": {
    "source": "Speculative full-file edit",
@@ -15326,12 +15326,12 @@
    "target": "styles.scss"
   },
   "064-052": {
-   "source": "Subject:",
-   "target": "主题："
+   "source": "Remove Subscription",
+   "target": "移除订阅"
   },
   "064-053": {
-   "source": "Subscriptions",
-   "target": "订阅"
+   "source": "Remove Trigger",
+   "target": "移除触发器"
   },
   "064-054": {
    "source": "Subtle",
@@ -15554,8 +15554,8 @@
    "target": "Workbench：活跃 / 关闭后保留。点击打开工作区诊断。"
   },
   "068-049": {
-   "source": "Worker Interval",
-   "target": "Worker 间隔"
+   "source": "Subscription event",
+   "target": "订阅事件"
   },
   "068-050": {
    "source": "Workflow",
@@ -15606,8 +15606,8 @@
    "target": "已跟踪的 Git 仓库"
   },
   "067-002": {
-   "source": "Transcript settled",
-   "target": "转录已确定"
+   "source": "Send follow-up",
+   "target": "发送跟进消息"
   },
   "067-003": {
    "source": "Transcript unavailable",
@@ -15638,8 +15638,8 @@
    "target": "在对话中试用此插件"
   },
   "067-010": {
-   "source": "Try typing @ to add a mention...",
-   "target": "输入 @ 可添加提及…"
+   "source": "Set up Environment",
+   "target": "初始化环境"
   },
   "067-011": {
    "source": "Tuesday",
@@ -15718,8 +15718,8 @@
    "target": "未暂存"
   },
   "067-030": {
-   "source": "Untitled",
-   "target": "无标题"
+   "source": "Show environment filters",
+   "target": "显示环境筛选"
   },
   "067-031": {
    "source": "Untracked",
@@ -15738,8 +15738,8 @@
    "target": "需要更新"
   },
   "067-035": {
-   "source": "Updated pull request title.",
-   "target": "已更新拉取请求标题。"
+   "source": "Show PR filters",
+   "target": "显示 PR 筛选"
   },
   "067-036": {
    "source": "Upgrade",
@@ -15750,12 +15750,12 @@
    "target": "升级到 Pro 账号"
   },
   "067-038": {
-   "source": "Urgent",
-   "target": "紧急"
+   "source": "Show source filters",
+   "target": "显示来源筛选"
   },
   "067-039": {
-   "source": "Usage of the application SQLite database (state.vscdb) by data type.",
-   "target": "按数据类型统计应用 SQLite 数据库（state.vscdb）的用量。"
+   "source": "Show status filters",
+   "target": "显示状态筛选"
   },
   "067-040": {
    "source": "Use Allowlist",
@@ -16254,8 +16254,8 @@
    "target": "切换文件展开状态"
   },
   "066-044": {
-   "source": "Toggle File Tree",
-   "target": "切换文件树"
+   "source": "See more",
+   "target": "查看更多"
   },
   "066-045": {
    "source": "Toggle Full Screen",
@@ -16274,8 +16274,8 @@
    "target": "切换索引化智能体搜索开发者工具"
   },
   "066-049": {
-   "source": "Toggle Local / GitHub",
-   "target": "切换本地 / GitHub"
+   "source": "Select as Repository Destination",
+   "target": "选择为仓库目标"
   },
   "066-050": {
    "source": "Toggle Performance Debug Bar",
@@ -16410,8 +16410,8 @@
    "target": "事件已触发"
   },
   "072-023": {
-   "source": "Incident...",
-   "target": "事件..."
+   "source": "We work with model providers to offer you free credits beyond your purchased usage. Amounts may vary.",
+   "target": "我们与模型提供商合作，在你购买的用量之外提供免费额度。金额可能有所不同。"
   },
   "072-024": {
    "source": "Incidents & Triage",
@@ -16450,8 +16450,8 @@
    "target": "最近 24 小时"
   },
   "072-033": {
-   "source": "Last 7d",
-   "target": "最近 7 天"
+   "source": "when agent workspace focused",
+   "target": "当智能体窗口获得焦点时"
   },
   "072-034": {
    "source": "Loading evals",
@@ -16538,8 +16538,8 @@
    "target": "指标键"
   },
   "072-055": {
-   "source": "Microsoft Teams channel created",
-   "target": "Microsoft Teams 频道已创建"
+   "source": "Worked for 2m 15s",
+   "target": "用时 2分15秒"
   },
   "072-056": {
    "source": "Microsoft Teams connection required",
@@ -16682,8 +16682,8 @@
    "target": "为云端智能体侧边栏启用悬停展开状态。禁用后，侧边栏不会在悬停时展开，并在折叠时完全隐藏。"
   },
   "069-031": {
-   "source": "Enable partial accepts for Cursor Tab, using the editor.action.inlineSuggest.acceptNextWord keybinding",
-   "target": "为 Cursor Tab 启用部分接受，使用 editor.action.inlineSuggest.acceptNextWord 快捷键"
+   "source": "The agent needs your help before setup can continue. Complete or skip the blocking tasks to keep going.",
+   "target": "初始化继续前需要你的帮助。完成或跳过阻塞任务以继续。"
   },
   "069-032": {
    "source": "Enable performance protection for inline diffs. When enabled, inline diff decorations will be suppressed if there are too many changes to prevent editor unresponsiveness.",
@@ -16746,8 +16746,8 @@
    "target": "多光标编辑"
   },
   "069-047": {
-   "source": "Name of the debug visualizer",
-   "target": "调试可视化工具的名称"
+   "source": "These scripts have not been tested in an environment build. Ask the agent to create a new build.",
+   "target": "这些脚本尚未在环境构建中测试。让智能体创建新的构建。"
   },
   "069-048": {
    "source": "Notebook controller Id",
@@ -16862,12 +16862,12 @@
    "target": "automations-section-caption--hint"
   },
   "071-016": {
-   "source": "Available repositories",
-   "target": "可用仓库"
+   "source": "Unable to load chat",
+   "target": "无法加载对话"
   },
   "071-017": {
-   "source": "Bitbucket Only",
-   "target": "仅 Bitbucket"
+   "source": "Unable to load side chat",
+   "target": "无法加载侧边对话"
   },
   "071-018": {
    "source": "Branch (optional)",
@@ -16938,8 +16938,8 @@
    "target": "上下文（可选）"
   },
   "071-035": {
-   "source": "Control how this automation is configured and updated",
-   "target": "控制此自动化的配置和更新方式"
+   "source": "Update API Key",
+   "target": "更新 API Key"
   },
   "071-036": {
    "source": "Copy config",
@@ -16954,8 +16954,8 @@
    "target": "统计智能体在运行期间发起的工具调用次数。"
   },
   "071-039": {
-   "source": "Created by users",
-   "target": "由用户创建"
+   "source": "Updates",
+   "target": "更新"
   },
   "071-040": {
    "source": "Cron expression (UTC)",
@@ -17186,8 +17186,8 @@
    "target": "· 默认"
   },
   "070-037": {
-   "source": "(Default Branch)",
-   "target": "（默认分支）"
+   "source": "Today at 2:14 PM",
+   "target": "今天下午 2:14"
   },
   "070-038": {
    "source": "(optional)",
@@ -17318,8 +17318,8 @@
    "target": "暂无可绘制的指标历史记录。"
   },
   "073-010": {
-   "source": "No services found",
-   "target": "未找到服务"
+   "source": "You have unsaved environment changes. Save again to update the snapshot.",
+   "target": "环境更改尚未保存。再次保存以更新快照。"
   },
   "073-011": {
    "source": "No statuses found",
@@ -17382,24 +17382,24 @@
    "target": "一个或多个触发器需要额外身份验证才能使用"
   },
   "073-026": {
-   "source": "Only the first cron trigger will be used",
-   "target": "将仅使用第一个 cron 触发器"
+   "source": "Join Notebook Cells",
+   "target": "合并笔记本单元格"
   },
   "073-027": {
-   "source": "Open Pull Request",
-   "target": "打开拉取请求"
+   "source": "Metadata changed",
+   "target": "元数据已更改"
   },
   "073-028": {
-   "source": "Organizations",
-   "target": "组织"
+   "source": "Outputs",
+   "target": "输出"
   },
   "073-029": {
-   "source": "Owner must authenticate",
-   "target": "所有者必须完成身份验证"
+   "source": "Outputs changed",
+   "target": "输出已更改"
   },
   "073-030": {
-   "source": "PR Number",
-   "target": "PR 编号"
+   "source": "Revert Notebook Cell Content Change",
+   "target": "还原笔记本单元格内容更改"
   },
   "073-031": {
    "source": "PR review comment",
@@ -17422,8 +17422,8 @@
    "target": "拉取请求..."
   },
   "073-036": {
-   "source": "Pushed",
-   "target": "已推送"
+   "source": "Actions...",
+   "target": "操作..."
   },
   "073-037": {
    "source": "Reacted Message",
@@ -17486,12 +17486,12 @@
    "target": "运行摘要"
   },
   "073-052": {
-   "source": "Run this eval automatically using the same UTC cron schedules as Automations.",
-   "target": "使用与自动化相同的 UTC cron 计划自动运行此评估。"
+   "source": "Input changed",
+   "target": "输入已更改"
   },
   "073-053": {
-   "source": "same chat",
-   "target": "同一对话"
+   "source": "interactiveWindow.showExecutionHint",
+   "target": "interactiveWindow.showExecutionHint"
   },
   "073-054": {
    "source": "Save and enable to configure the webhook URL",
@@ -17546,20 +17546,20 @@
    "target": "搜索状态..."
   },
   "074-007": {
-   "source": "Search teammates",
-   "target": "搜索队友"
+   "source": "Notebook Metadata",
+   "target": "Notebook 元数据"
   },
   "074-008": {
-   "source": "Search teams...",
-   "target": "搜索团队..."
+   "source": "Notebook Metadata changed",
+   "target": "Notebook 元数据已更改"
   },
   "074-009": {
-   "source": "Search Triggers...",
-   "target": "搜索触发器..."
+   "source": "Notebook Replace",
+   "target": "Notebook 替换"
   },
   "074-010": {
-   "source": "Send to Microsoft Teams",
-   "target": "发送到 Microsoft Teams"
+   "source": "Notebook Replace All",
+   "target": "Notebook 全部替换"
   },
   "074-011": {
    "source": "Send to Slack",
@@ -17602,8 +17602,8 @@
    "target": "静态指标"
   },
   "074-021": {
-   "source": "Static metrics are computed from the selected run data and do not use judge capacity.",
-   "target": "静态指标基于所选运行数据计算，不占用评判容量。"
+   "source": "Split Notebook Cell",
+   "target": "拆分 Notebook 单元格"
   },
   "074-022": {
    "source": "Status changed",
@@ -17716,6 +17716,14 @@
   "074-049": {
    "source": "Workflow run completed...",
    "target": "工作流运行已完成..."
+  },
+  "078-016": {
+   "source": "Run agents on a schedule or automatically in response to events. Billed at plan rates.",
+   "target": "按计划或响应事件自动运行智能体。按方案费率计费。"
+  },
+  "075-026": {
+   "source": "Allows the agent to read and write persistent notes with the memory tool",
+   "target": "允许智能体使用记忆工具读写持久化笔记"
   }
  },
  "byText": {
@@ -22231,10 +22239,304 @@
   "Batch edits": "批量编辑",
   "Send to agent": "发送给智能体",
   "Show pending annotations": "显示待处理的注释",
-  "This comment isn't saved yet": "此评论尚未保存"
+  "This comment isn't saved yet": "此评论尚未保存",
+  "Cursor Models": "Cursor 模型",
+  "Other Models": "其他模型",
+  "Connect Repos": "连接仓库",
+  "Committing...": "提交中...",
+  "Connect Repo": "连接仓库",
+  "Debugging CI": "正在调试 CI",
+  "Fixing CI with FSD": "正在使用 FSD 修复 CI",
+  "Invalid tool result": "工具结果无效",
+  "Account": "账号",
+  "Open Grok Bot": "打开 Grok Bot",
+  "Set up repository": "仓库设置完成",
+  "Set up repository with warnings": "仓库设置存在警告",
+  "Setting up repository": "正在设置仓库",
+  "Workspaces": "工作区",
+  "Edit Goal": "编辑目标",
+  "Editing queued message": "正在编辑排队消息",
+  "Failed to approve already-connected cloud MCP auth": "批准已连接的云端 MCP 授权失败",
+  "Failed to hydrate conversation step from conversation state.": "无法从会话状态恢复会话步骤。",
+  "Failed to set up repository": "仓库初始化失败",
+  "Grant Access": "授予访问权限",
+  "No Automations Yet": "暂无自动化",
+  "Run locally in a Worktree": "在 Worktree 中本地运行",
+  "Search models": "搜索模型",
+  "Show less": "收起",
+  "Fix CI with FSD": "用 FSD 修复 CI",
+  "from plan tray": "从 Plan 托盘",
+  "[ComposerAgentService] Blob not found in cloud agent storage": "[ComposerAgentService] 云端智能体存储中未找到 Blob",
+  "[ComposerAgentService] Blob not found in prefetchedBlobs": "[ComposerAgentService] prefetchedBlobs 中未找到 Blob",
+  "$(circle-slash)": "$(circle-slash)",
+  "$(lightbulb-sparkle)": "$(lightbulb-sparkle)",
+  "$(lightbulb)": "$(lightbulb)",
+  "Add Plugins": "添加插件",
+  "Additional usage beyond limits consumes Other Models quota or on-demand spend.": "超出限制的额外用量会消耗其他模型配额或按需消费。",
+  "Agent model": "智能体模型",
+  "Autopilot PR": "自动 PR",
+  "Autopilot PR runtime": "自动 PR 运行环境",
+  "Debug CI Failure": "调试 CI 失败",
+  "AWS Bedrock team configuration": "AWS Bedrock 团队配置",
+  "Background agent wakeup": "后台智能体唤醒",
+  "branch name": "分支名称",
+  "Branch or commit hash": "分支或提交哈希",
+  "Building image": "正在构建镜像",
+  "Built image": "镜像已构建",
+  "Built image with warnings": "镜像已构建，但有警告",
+  "Check Again": "重新检查",
+  "Context window is getting full": "上下文窗口即将占满",
+  "Copy transcript link": "复制对话记录链接",
+  "Create Project Here": "在此创建项目",
+  "Always revert": "始终还原",
+  "Apply all agent changes, then review and resolve conflicts manually in the editor.": "应用所有智能体更改，然后在编辑器中手动审查并解决冲突。",
+  "Authenticate this MCP server so its tools can be used. Call this tool through your MCP tool-calling interface when STATUS.md indicates this server needs authentication.": "对此 MCP 服务器进行身份验证，以便使用其工具。当 STATUS.md 显示此服务器需要身份验证时，通过 MCP 工具调用接口调用此工具。",
+  "Created cloud workspace": "已创建云端工作区",
+  "Created cloud workspace with warnings": "已创建云端工作区，但有警告",
+  "Creating cloud workspace": "正在创建云端工作区",
+  "Creating PR...": "正在创建 PR...",
+  "Cycle": "循环",
+  "Editing": "编辑中",
+  "Editing goal": "编辑目标",
+  "Enterprise Login": "企业版登录",
+  "Environment replacement is not supported in the IDE client": "IDE 客户端不支持环境变量替换",
+  "CloudAgentRepository: Failed to skip cloud questionnaire": "CloudAgentRepository: 跳过云端问卷失败",
+  "CloudAgentRepository: Failed to submit cloud questionnaire response": "CloudAgentRepository: 提交云端问卷回复失败",
+  "Codebase options": "代码库选项",
+  "Codex": "Codex",
+  "Completed setup": "初始化完成",
+  "Completed setup with warnings": "初始化完成，但有警告",
+  "Completing setup": "正在初始化",
+  "Consumed by named models.": "由指定模型使用。",
+  "Context Explorer": "上下文资源管理器",
+  "Dev Auto Login (Enterprise)": "开发者自动登录（企业版）",
+  "Dev Auto Login (Fake Tokens for Testing)": "开发者自动登录（用于测试的假 Token）",
+  "Dev Auto Login (Free)": "开发者自动登录（免费）",
+  "Dev Auto Login (Pro Plus Trial)": "开发者自动登录（Pro Plus 试用）",
+  "Dev Auto Login (Pro Plus)": "开发者自动登录（Pro Plus）",
+  "Dev Auto Login (Pro Trial)": "开发者自动登录（Pro 试用）",
+  "Dev Auto Login (Pro)": "开发者自动登录（Pro）",
+  "Dev Auto Login (Ultra)": "开发者自动登录（Ultra）",
+  "Dev Login (Enterprise)": "开发者登录（企业版）",
+  "Dev Login (Free)": "开发者登录（免费）",
+  "Dev Login (Pro Plus Trial)": "开发者登录（Pro Plus 试用）",
+  "Dev Login (Pro Plus)": "开发者登录（Pro Plus）",
+  "Dev Login (Pro Trial)": "开发者登录（Pro 试用）",
+  "Dev Login (Pro)": "开发者登录（Pro）",
+  "Dev Login (Ultra)": "开发者登录（Ultra）",
+  "Dismiss payment failed banner": "关闭支付失败横幅",
+  "Dismiss payment method update banner": "关闭支付方式更新横幅",
+  "Dismiss pending cancellation banner": "关闭待处理取消横幅",
+  "Don't show again for this agent.": "对此智能体不再显示。",
+  "Includes Cursor Grok and Composer": "包含 Cursor Grok 和 Composer",
+  "Installed dependencies": "已安装依赖项",
+  "Installed dependencies with warnings": "依赖项已安装，但有警告",
+  "Installed extensions": "已安装扩展",
+  "Installed extensions with warnings": "扩展已安装，但有警告",
+  "Installing dependencies": "正在安装依赖项",
+  "Installing extensions": "正在安装扩展",
+  "Grant Repo Access": "授予仓库访问权限",
+  "Hidden dialogs": "隐藏的对话框",
+  "Failed to approve cloud MCP auth": "批准云端 MCP 认证失败",
+  "Failed to build image": "构建镜像失败",
+  "Failed to complete setup": "完成初始化失败",
+  "Failed to create cloud workspace": "创建云端工作区失败",
+  "Failed to get subagent conversation": "获取子智能体会话失败",
+  "Failed to install dependencies": "安装依赖失败",
+  "Failed to install extensions": "安装扩展失败",
+  "Failed to prepare environment": "准备环境失败",
+  "Failed to provision sandbox": "预置沙盒失败",
+  "Failed to pull Docker images": "拉取 Docker 镜像失败",
+  "Failed to reject aborted cloud MCP auth": "拒绝已中止的云端 MCP 认证失败",
+  "Failed to reject cloud MCP auth without an auth URL": "拒绝无认证 URL 的云端 MCP 认证失败",
+  "Failed to restore empty-state draft for local glass submit error": "无法恢复本地 Glass 提交错误的空状态草稿",
+  "Failed to restore workspace files": "恢复工作区文件失败",
+  "Failed to run workspace setup": "运行工作区初始化失败",
+  "Failed to save snapshot": "保存快照失败",
+  "Failed to set up repositories": "设置仓库失败",
+  "Failed to skip cloud MCP auth": "跳过云端 MCP 认证失败",
+  "Metadata": "元数据",
+  "More models": "更多模型",
+  "Must provide either 'command' for stdio-based server or 'url' for SSE-based server": "必须为基于 stdio 的服务器提供 'command'，或为基于 SSE 的服务器提供 'url'",
+  "Network diagnostics": "网络诊断",
+  "Network protocol": "网络协议",
+  "New Automation": "新建自动化",
+  "Just now": "刚刚",
+  "Keep the other applied changes and merge this chat on top.": "保留其他已应用的更改，并在此基础上合并此对话。",
+  "Limit must be a positive number": "上限必须为正数",
+  "Login with Enterprise (team) for local development": "使用企业版（团队）账号登录以进行本地开发",
+  "Login with Free for local development": "使用免费版账号登录以进行本地开发",
+  "Login with Pro plan for local development": "使用 Pro 方案账号登录以进行本地开发",
+  "Login with Pro Plus for local development": "使用 Pro Plus 账号登录以进行本地开发",
+  "Login with Pro Plus Trial for local development": "使用 Pro Plus 试用账号登录以进行本地开发",
+  "Login with Pro Trial for local development": "使用 Pro 试用账号登录以进行本地开发",
+  "Login with Ultra plan for local development": "使用 Ultra 方案账号登录以进行本地开发",
+  "Plan creation failed": "方案创建失败",
+  "Please enter a limit amount": "请输入额度上限",
+  "No conversation found for subagent composer": "未找到子智能体 Composer 的会话",
+  "notebook.globalToolbarShowLabel": "notebook.globalToolbarShowLabel",
+  "Failed to start agent services": "启动智能体服务失败",
+  "Failed waiting for a worker": "等待工作进程失败",
+  "Free Login": "免费登录",
+  "from error tray": "从错误托盘",
+  "from plan tab": "从 Plan 标签页",
+  "from switch mode card": "从切换模式卡片",
+  "Full": "已满",
+  "Required domains": "必需域名",
+  "Restored workspace files": "已恢复工作区文件",
+  "Restored workspace files with warnings": "已恢复工作区文件，但有警告",
+  "Restoring workspace files": "正在恢复工作区文件",
+  "Ran workspace setup": "已运行工作区初始化",
+  "Ran workspace setup with warnings": "已运行工作区初始化，有警告",
+  "Running workspace setup": "正在运行工作区初始化",
+  "Saved snapshot": "已保存快照",
+  "Saved snapshot with warnings": "已保存快照，但有警告",
+  "Saving snapshot for faster startup": "正在保存快照以加快启动",
+  "Search and Replace": "搜索和替换",
+  "Select Folder": "选择文件夹",
+  "Self-hosted": "自托管",
+  "Prepared environment": "环境已准备",
+  "Prepared environment with warnings": "环境已准备，但有警告",
+  "Preparing environment": "正在准备环境",
+  "Pro Login": "Pro 登录",
+  "Pro Plus Login": "Pro Plus 登录",
+  "Pro Plus Trial Login": "Pro Plus 试用登录",
+  "Pro Trial Login": "Pro 试用登录",
+  "Provisioned sandbox": "沙盒已预配",
+  "Provisioned sandbox with warnings": "沙盒已预配，但有警告",
+  "Provisioning sandbox": "正在预配沙盒",
+  "Pull request fetch timed out": "拉取请求获取超时",
+  "Pulled Docker images": "Docker 镜像已拉取",
+  "Pulled Docker images with warnings": "Docker 镜像已拉取，但有警告",
+  "Pulling Docker images": "正在拉取 Docker 镜像",
+  "Set Up Cloud Agents": "设置云端智能体",
+  "Set up repositories": "仓库设置完成",
+  "Set up repositories with warnings": "仓库设置完成但有警告",
+  "Setting up repositories": "正在设置仓库",
+  "Show more": "显示更多",
+  "Sync your local skills to use them with Cloud Agents. Any changes will update automatically.": "同步本地技能，以便在云端智能体中使用。任何更改都会自动更新。",
+  "Task failed": "任务失败",
+  "Some items could not be loaded": "部分项目无法加载",
+  "Started agent services": "已启动智能体服务",
+  "Started agent services with warnings": "智能体服务已启动，但有警告",
+  "Starting agent services": "正在启动智能体服务",
+  "Stash your local changes (including untracked files) so you can apply them later.": "暂存本地更改（包括未跟踪的文件），以便稍后应用。",
+  "Waiting for a worker": "等待工作进程",
+  "Worker ready": "工作进程就绪",
+  "Todo update failed": "待办更新失败",
+  "Tool call failed": "工具调用失败",
+  "Turn Off and Restart": "关闭并重启",
+  "Turn On and Restart": "开启并重启",
+  "Ultra Login": "Ultra 登录",
+  "Undo other applied chats before applying this one.": "应用此对话前，先撤销其他已应用的对话。",
+  "update title": "更新标题",
+  "User Rule": "用户规则",
+  "Agent is setting up the environment. You can still add secrets or update network access. Install scripts will be available after the first snapshot is created.": "智能体正在初始化环境。你仍可添加密钥或更新网络访问。首次快照创建后即可使用安装脚本。",
+  "Allow cloud agents to run in your local environment.": "允许云端智能体在本地环境中运行。",
+  "Authenticating": "认证中",
+  "your included API usage": "已包含的 API 用量",
+  "your included total usage": "已包含的总用量",
+  "[AgentPanel] Failed to clone repository for tiled empty tile:": "[AgentPanel] 无法为平铺空图块克隆仓库：",
+  "[AgentPanel] Failed to clone repository:": "[AgentPanel] 克隆仓库失败：",
+  "⌘L": "⌘L",
+  "2m ago": "2分钟前",
+  "BrowserTab": "BrowserTab",
+  "CanvasDesignMode": "CanvasDesignMode",
+  "Chat": "对话",
+  "Checking...": "检查中...",
+  "Creating Branch...": "正在创建分支...",
+  "for cloud agents": "用于云端智能体",
+  "from pull request tab": "从拉取请求 Tab",
+  "Extensions": "扩展",
+  "Figma": "Figma",
+  "Figma Design File": "Figma 设计文件",
+  "Files to exclude (e.g. *.test.ts, dist/**)": "要排除的文件（例如 *.test.ts、dist/**）",
+  "Files to include (e.g. *.ts, src/**/*.py)": "要包含的文件（例如 *.ts、src/**/*.py）",
+  "Find in terminal": "在终端中查找",
+  "Git Actions": "Git 操作",
+  "Git Repository": "Git 仓库",
+  "Global": "全局",
+  "Edited math.ts": "已编辑 math.ts",
+  "Edited README.md": "已编辑 README.md",
+  "Enable extended thinking for complex reasoning": "为复杂推理启用扩展思考",
+  "Enable extended thinking for complex reasoning tasks": "为复杂推理任务启用扩展思考",
+  "Enable local self-hosted workers": "启用本地自托管工作进程",
+  "Environment is ready to save. You can still make changes before saving.": "环境已就绪，可以保存。保存前仍可修改。",
+  "Close subscriptions tray": "关闭订阅托盘",
+  "Close triggers tray": "关闭触发器托盘",
+  "in committed scope": "在已提交范围",
+  "in staged scope": "在已暂存范围",
+  "in unstaged scope": "在未暂存范围",
+  "Installing...": "安装中...",
+  "Integrations": "集成",
+  "Let's kick something off": "开始做点什么吧",
+  "Link Account": "关联账号",
+  "Loading repos…": "正在加载仓库…",
+  "Loading side chat": "正在加载侧边对话",
+  "Local agent runtime": "本地智能体运行时",
+  "Manage the processes started by your agent to keep your computer responsive.": "管理由你的智能体启动的进程，保持电脑响应流畅。",
+  "Mark as Done": "标记为完成",
+  "Markdown Document": "Markdown 文档",
+  "Maximum context window size": "最大上下文窗口大小",
+  "Mermaid": "Mermaid",
+  "Move": "移动",
+  "Open Privacy Settings": "打开隐私设置",
+  "Opening chat": "正在打开对话",
+  "No workspace": "无工作区",
+  "Notion": "Notion",
+  "Notion Page": "Notion 页面",
+  "Ran": "已运行",
+  "Ran focused tests": "已运行聚焦测试",
+  "Ran type-check": "已运行类型检查",
+  "Remove Subscription": "移除订阅",
+  "Remove Trigger": "移除触发器",
+  "Please update your Cursor application": "请更新你的 Cursor 应用",
+  "Prevent Agent from automatically running Browser tools": "阻止智能体自动运行浏览器工具",
+  "Project Plan": "项目方案",
+  "Pull Request": "拉取请求",
+  "Pushing...": "推送中...",
+  "No matching side chats": "没有匹配的侧边对话",
+  "No MCP tools are connected yet.": "尚未连接任何 MCP 工具",
+  "No project agents have access yet.": "尚无项目智能体拥有访问权限",
+  "No repos selected": "未选择仓库",
+  "See more": "查看更多",
+  "Select as Repository Destination": "选择为仓库目标",
+  "Subscription event": "订阅事件",
+  "Unable to load chat": "无法加载对话",
+  "Unable to load side chat": "无法加载侧边对话",
+  "Update API Key": "更新 API Key",
+  "Updates": "更新",
+  "Today at 2:14 PM": "今天下午 2:14",
+  "The agent needs your help before setup can continue. Complete or skip the blocking tasks to keep going.": "初始化继续前需要你的帮助。完成或跳过阻塞任务以继续。",
+  "These scripts have not been tested in an environment build. Ask the agent to create a new build.": "这些脚本尚未在环境构建中测试。让智能体创建新的构建。",
+  "Send follow-up": "发送跟进消息",
+  "Set up Environment": "初始化环境",
+  "Show environment filters": "显示环境筛选",
+  "Show PR filters": "显示 PR 筛选",
+  "Show source filters": "显示来源筛选",
+  "Show status filters": "显示状态筛选",
+  "Notebook Metadata": "Notebook 元数据",
+  "Notebook Metadata changed": "Notebook 元数据已更改",
+  "Notebook Replace": "Notebook 替换",
+  "Notebook Replace All": "Notebook 全部替换",
+  "Split Notebook Cell": "拆分 Notebook 单元格",
+  "Run agents on a schedule or automatically in response to events. Billed at plan rates.": "按计划或响应事件自动运行智能体。按方案费率计费。",
+  "Allows the agent to read and write persistent notes with the memory tool": "允许智能体使用记忆工具读写持久化笔记",
+  "You have unsaved environment changes. Save again to update the snapshot.": "环境更改尚未保存。再次保存以更新快照。",
+  "Join Notebook Cells": "合并笔记本单元格",
+  "Metadata changed": "元数据已更改",
+  "Outputs": "输出",
+  "Outputs changed": "输出已更改",
+  "Revert Notebook Cell Content Change": "还原笔记本单元格内容更改",
+  "Actions...": "操作...",
+  "Input changed": "输入已更改",
+  "interactiveWindow.showExecutionHint": "interactiveWindow.showExecutionHint",
+  "We work with model providers to offer you free credits beyond your purchased usage. Amounts may vary.": "我们与模型提供商合作，在你购买的用量之外提供免费额度。金额可能有所不同。",
+  "when agent workspace focused": "当智能体窗口获得焦点时",
+  "Worked for 2m 15s": "用时 2分15秒"
  },
  "usage": {
-  "total_tokens": 598063,
-  "calls": 127
+  "total_tokens": 736140,
+  "calls": 197
  }
 }

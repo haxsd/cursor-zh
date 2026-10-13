@@ -71,8 +71,17 @@ const KIND_CODE = 'code';
 const KIND_OTHER = 'other';
 
 function buildClassifiers(rules) {
-  const ui = rules.uiProps.join('|').replace(/[-]/g, '\\-');
-  const id = rules.idProps.join('|');
+  // 属性名识别分两层：
+  //   uiProps         —— 精确匹配（label / title / description …）
+  //   uiPropSuffixes  —— 后缀匹配，用来覆盖带前缀的属性名
+  //                      （autoUsageBarLabel、settingsButtonTitle、apiDescription …）
+  // 后缀清单只收「展示语义」的词；像 Text 这种混着功能值的后缀（sortText /
+  // searchText / newText）不列入，否则会把排序、过滤、差异内容当成文案翻译。
+  const esc = (list) => list.join('|').replace(/[-]/g, '\\-');
+  const uiParts = rules.uiProps.slice();
+  for (const s of rules.uiPropSuffixes || []) uiParts.push('\\w{2,28}' + s);
+  const ui = esc(uiParts);
+  const id = esc(rules.idProps);
   const uiRe = new RegExp('(?:^|[^\\w$.-])(' + ui + ')\\s*:\\s*$');
   const idRe = new RegExp('(?:^|[^\\w$.-])(' + id + ')\\s*:\\s*$');
   return (prefix) => {

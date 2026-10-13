@@ -2,8 +2,8 @@
 
 把 Cursor 桌面端**自有界面**（Agent 窗口 / Cursor 设置页 / 账号页 / Automations）翻成简体中文的本地工具。
 
-当前已应用到本机：**Cursor 3.23.12**（commit `2d29876d56`，安装于 `D:\cursor\cursor`），
-共替换 **9,307 处**，覆盖 3 个程序文件。
+当前已应用到本机：**Cursor 3.24.12**（commit `37b865941c`，安装于 `D:\cursor\cursor`），
+共替换 **9,900 处**，覆盖 3 个程序文件。
 
 ## 为什么需要这个
 
@@ -13,18 +13,18 @@ Cursor 官方支持 `Configure Display Language` + 语言包，但语言包只�
 
 | 文件 | 大小 | 覆盖范围 | 在校验表 |
 | --- | --- | --- | --- |
-| `out/vs/workbench/workbench.glass.main.js` | 44.3 MB | Agent 窗口（glass 模式） | 否 |
-| `out/vs/workbench/workbench.desktop.main.js` | 37.4 MB | 编辑器窗口、Cursor 设置页 | 是 |
-| `out/vs/workbench/workbench.anysphere-ui-automations.js` | 8.4 MB | Automations | 否 |
+| `out/vs/workbench/workbench.glass.main.js` | 45.2 MB | Agent 窗口（glass 模式） | 否 |
+| `out/vs/workbench/workbench.desktop.main.js` | 38.0 MB | 编辑器窗口、Cursor 设置页 | 是 |
+| `out/vs/workbench/workbench.anysphere-ui-automations.js` | 8.5 MB | Automations | 否 |
 
 ## 当前成果
 
 | 项目 | 数量 |
 | --- | --- |
-| 扫描到的字面量（三个文件合计） | 858,873 条，去重 158,167 条 |
-| 判定为界面文案 | 4,429 条（auto 3,333 / context 1,096） |
-| 实际替换 | 9,307 处（plan / apply / 审计三方口径完全一致） |
-| 完成翻译 | 4,435 条（DeepSeek 批量翻译 + 人工修正表） |
+| 扫描到的字面量（三个文件合计） | 871,717 条，去重 161,304 条 |
+| 判定为界面文案 | 4,694 条（auto 3,551 / context 1,143） |
+| 实际替换 | 9,900 处（plan / apply / 审计三方口径完全一致） |
+| 完成翻译 | 4,810 条（DeepSeek 批量翻译 + 人工修正表） |
 | 落盘审计 | 三个文件全部一致 ✓（逐字面量核对，非抽样） |
 | product.json 校验值 | 已同步，`doctor` 显示匹配 ✓ |
 
@@ -42,7 +42,7 @@ node tools/bootstrap.js --check    # 先看：装在哪、什么版本、补丁�
 node tools/bootstrap.js            # 一键：检测 → 扫描 → 打补丁 → 审计
 ```
 
-- 译文库（4,437 条）随仓库一起来，所以**另一台机器不需要任何 API 密钥**；
+- 译文库（4,810 条）随仓库一起来，所以**另一台机器不需要任何 API 密钥**；
   只有当那边的 Cursor 版本更新、出现仓库里没有的新文案时才需要翻译（`--with-ai` 或跳过保持英文）。
 - 目标机器上必须有这台机器同版本或相近版本的 Cursor；版本不同也能用，`bootstrap` 会现场扫描该机器自己的文件。
 - 补丁打完重启 Cursor 生效；要回退：`node src/cli.js restore --force`。
@@ -61,7 +61,7 @@ node tools/bootstrap.js            # 一键：检测 → 扫描 → 打补丁 �
 
 ```bash
 node tools/bootstrap.js --check     # 只看：装在哪、什么版本、补丁在不在、还差多少译文
-node tools/bootstrap.js             # 检测 → 扫描 → 打补丁 → 审计（用仓库里的 4,437 条译文）
+node tools/bootstrap.js             # 检测 → 扫描 → 打补丁 → 审计（用仓库里的 4,810 条译文）
 node tools/bootstrap.js --with-ai   # 顺带调用 DeepSeek 补翻新文案（需 DEEPSEEK_API_KEY）
 node tools/bootstrap.js --force     # 已打过补丁也重跑一遍
 ```
@@ -100,7 +100,7 @@ powershell -ExecutionPolicy Bypass -File tools\run-translate.ps1 --size=60 --con
 因为被覆盖的是整个文件（连同我们的改动），`product.json` 也由升级程序重写。
 
 **已有的译文会不会白费**：不会。译文按英文原文索引，升级后能命中的部分直接复用。
-实测数据：一次重新扫描后，4,429 条里只有 3 条需要新翻译。
+实测数据：3.24.9 → 3.24.12 一次重新扫描后，4,400 条里只有 6 条需要新翻译。
 
 **升级后重打**（约 1–2 分钟，其中扫描 5 秒、替换 10 秒，慢的部分只有翻译新增文案）：
 
@@ -134,6 +134,12 @@ node src/cli.js restore --force   # 任何可疑情况都能一键回到英文
 - **只在 UI 字段上下文替换**：`label`/`title`/`description`/`placeholder`/`children` 等；
   同时出现在对象键、`===` 比较、`id:`/`key:`/`type:` 等位置的字符串只替换其 UI 出现处（context 级），
   其余位置一律不动。
+- **带前缀的属性名按后缀识别**：`rules.json` 的 `uiPropSuffixes` 收 `Label`/`Title`/`Description`/
+  `Hint`/`Placeholder` 等展示语义后缀，于是 `autoUsageBarLabel`、`settingsButtonTitle`、
+  `apiDescription` 这类属性也能被认出来（此前只认精确的 `label`/`title`，用量面板、账号页的大批文案因此漏网）。
+  `Text` 这类混着功能值的后缀**故意不收**——`sortText`/`searchText`/`newText` 是排序、过滤、差异用的值，
+  翻译会改变行为。个别不该翻的条目（图标语法 `$(...)`、点号标识符、日志消息）用 `config/overrides.json`
+  的「原样映射」挡掉：译文与原文相同的条目不替换。
 - **丢掉嵌套假字面量**：`'<span title="Cloud Agent">'` 这类字符串里的双引号片段会被引号配对
   误判成独立字面量，扫描器只保留最外层匹配，避免重复替换与半截翻译。
 - **显式替换区间**：每条替换都对应扫描时记录的确切字节区间，不用全局字符串搜索，
@@ -141,7 +147,7 @@ node src/cli.js restore --force   # 任何可疑情况都能一键回到英文
 - **落盘前三道校验**：替换后 `node --check` 编译校验；文件大小/版本门禁；写入后审计字面量清单。
 - **三方口径完全一致**：`plan`（要替换多少处）、`apply`（实际替换多少处）、`audit`（文件里字面量
   清单的变化量）用同一套区间模型计算，三者数字必须相等；数字不相等就说明模型与实现脱节。
-  当前为 5,911 / 2,821 / 575 = **9,307 处**。
+  当前为 6,294 / 3,015 / 591 = **9,900 处**。
 - **不改写转义写法**：译文与原文相同（或仅转义写法不同）的条目不替换，所以 `"\u2192"`、`"\u2026"`
   这类原样保留，不会被改写成字面的 `→`、`…`；emoji 用真实字符写入，不残留 `\u{...}`。
 - **scan 的两道门禁**：在已汉化的文件上扫描会被拒绝（否则会把中文当文案、覆盖掉好的英文快照）；
@@ -172,7 +178,7 @@ node src/cli.js restore --force   # 任何可疑情况都能一键回到英文
 ```
 config/glossary.json   术语表（翻译时注入 prompt，verify 时做一致性检查）
 config/overrides.json  人工修正表（优先于 API 译文）
-config/rules.json      抽取与替换规则（UI 字段白名单、跳过规则、长度限制）
+config/rules.json      抽取与替换规则（UI 字段白名单与后缀、跳过规则、长度限制）
 src/cli.js             全部子命令（doctor/status/scan/batch/merge/verify/plan/apply/restore/audit）
 src/translate.js       批量翻译（DeepSeek JSON 模式，按原文续跑，不重复花钱）
 src/lib/literals.js    字面量扫描与安全分类（安全边界都在这里）
