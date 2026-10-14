@@ -768,9 +768,9 @@ function reconstructManifest(appDir) {
 }
 
 function cmdRestore() {
+  const { appDir } = resolveAppDir(PROJECT_ROOT, arg('app-dir', null) || null);
   let manifest = readJson(path.join(WORK, 'applied.json'), null);
   if (!manifest) {
-    const { appDir } = resolveAppDir(PROJECT_ROOT, arg('app-dir', null) || null);
     manifest = reconstructManifest(appDir);
     if (manifest) {
       log(`未找到 work/applied.json，已从备份目录重建清单（commit ${manifest.commit}，${manifest.files.length} 个文件 + product.json）`);
@@ -779,6 +779,17 @@ function cmdRestore() {
   if (!manifest) throw new Error('没有 work/applied.json，也找不到 work/backups/ 下的备份，无法还原');
   if (P.isCursorRunning() && !arg('force', false)) {
     log('Cursor 正在运行。请完全退出 Cursor 后重试（或 --force）。');
+    return 2;
+  }
+  // 安全门禁：备份必须来自当前安装的版本。Cursor 升级会整体覆盖目标文件，
+  // 上一版的备份是旧文件——拿它还原等于把旧版本写到新安装上，会变成新旧混合状态。
+  const info = describe(appDir);
+  if (manifest.commit !== info.commit && !arg('allow-stale', false)) {
+    log(`备份来自 Cursor ${manifest.version || '未知版本'}（commit ${String(manifest.commit).slice(0, 10)}），`
+      + `当前安装是 ${info.version}（commit ${String(info.commit).slice(0, 10)}）。`);
+    log('直接还原会把上一版的文件写到新安装上，可能让 Cursor 变成新旧混合状态，已中止。');
+    log('升级后想回到英文：不需要还原（升级已覆盖那三个文件），直接 scan → apply 重新打补丁。');
+    log('确认要冒险写入旧版本文件：加 --allow-stale。');
     return 2;
   }
   for (const rec of manifest.files) {
@@ -809,6 +820,7 @@ function main() {
     log('  --size=120        batch 每批条数');
     log('  --from=<dir>      merge 从这个目录收集 worker 产物');
     log('  --force           apply/restore 在 Cursor 运行时也尝试');
+    log('  --allow-stale     restore 时允许用与当前安装不一致的备份（危险，默认拒绝）');
     process.exit(cmd ? 2 : 1);
   }
   try {

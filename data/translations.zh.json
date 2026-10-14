@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-13T11:44:22.057Z",
+ "generatedAt": "2026-10-14T00:28:55.673Z",
  "byId": {
   "001-001": {
    "source": "Cancel",
@@ -12326,8 +12326,8 @@
    "target": "按状态分组"
   },
   "051-022": {
-   "source": "Group by Updated",
-   "target": "按更新时间分组"
+   "source": "Edit CSS properties",
+   "target": "编辑 CSS 属性"
   },
   "051-023": {
    "source": "Group by Workspace",
@@ -15290,8 +15290,8 @@
    "target": "状态指示器"
   },
   "064-043": {
-   "source": "Stop Control",
-   "target": "停止控制"
+   "source": "Reload Browser Tab",
+   "target": "重新加载浏览器标签页"
   },
   "064-044": {
    "source": "Stop file watch recording",
@@ -15614,8 +15614,8 @@
    "target": "转录不可用"
   },
   "067-004": {
-   "source": "Triggered reconnect for the active agent workspace.",
-   "target": "已为活动智能体工作区触发重连。"
+   "source": "Send design annotations to agent",
+   "target": "向智能体发送设计标注"
   },
   "067-005": {
    "source": "Trust & Continue",
@@ -22533,10 +22533,13 @@
   "interactiveWindow.showExecutionHint": "interactiveWindow.showExecutionHint",
   "We work with model providers to offer you free credits beyond your purchased usage. Amounts may vary.": "我们与模型提供商合作，在你购买的用量之外提供免费额度。金额可能有所不同。",
   "when agent workspace focused": "当智能体窗口获得焦点时",
-  "Worked for 2m 15s": "用时 2分15秒"
+  "Worked for 2m 15s": "用时 2分15秒",
+  "Edit CSS properties": "编辑 CSS 属性",
+  "Reload Browser Tab": "重新加载浏览器标签页",
+  "Send design annotations to agent": "向智能体发送设计标注"
  },
  "usage": {
-  "total_tokens": 736140,
-  "calls": 197
+  "total_tokens": 741238,
+  "calls": 200
  }
 }
